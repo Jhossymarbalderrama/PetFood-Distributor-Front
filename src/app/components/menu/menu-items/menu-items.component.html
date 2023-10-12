@@ -1,0 +1,85 @@
+<div class="nav-center">
+  <div class="nav-logo">
+    <img src="../../../../assets/img/logo.png" class="logo" alt="logo" routerLink="/home"/>
+
+    <button class="nav-toggle" (click)="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <div class="links-container">
+    <!-- <ul class="links" [class.is-open]="isMenuOpen"> -->
+      <ul class="links" [ngClass]="isMenuOpen ? 'is-open' : ''">
+      <li class="nav-item" (click)="toggleMenu()">
+        <a routerLink="">home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          id="menu"
+          data-bs-toggle="dropdown"
+          class="nav-link dropdown-toggle"
+          data-bs-display="static"
+          >corporate</a
+        >
+        <ul class="dropdown-menu">
+          <li class="dropdown-item" routerLink="corporate/about" (click)="toggleMenu()">
+            <a>about</a>
+          </li>
+          <li class="dropdown-item" routerLink="corporate/history" (click)="toggleMenu()">
+            <a>history</a>
+          </li>
+          <li class="dropdown-item" routerLink="corporate/catalog" (click)="toggleMenu()">
+            <a>catalog</a>
+          </li>
+          <li class="dropdown-item" routerLink="corporate/export" (click)="toggleMenu()">
+            <a>export</a>
+          </li>
+          <li class="dropdown-item" routerLink="corporate/about-all" (click)="toggleMenu()">
+            <a>about all</a>
+          </li>
+          <li class="dropdown-item" routerLink="corporate/dealership" (click)="toggleMenu()">
+            <a>dealership</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          id="menu"
+          data-bs-toggle="dropdown"
+          class="nav-link dropdown-toggle"
+          data-bs-display="static"
+          >cat food</a
+        >
+        <ul class="dropdown-menu">
+          <li class="dropdown-item" routerLink="foods/dry-cat" (click)="toggleMenu()">
+            <a>dry foods</a>
+          </li>
+          <li class="dropdown-item" routerLink="foods/wet-cat" (click)="toggleMenu()">
+            <a>wet foods</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a
+          id="menu"
+          data-bs-toggle="dropdown"
+          class="nav-link dropdown-toggle"
+          data-bs-display="static"
+          >dog food</a
+        >
+        <ul class="dropdown-menu">
+          <li class="dropdown-item" routerLink="foods/dry-dog" (click)="toggleMenu()">
+            <a>dry foods</a>
+          </li>
+          <li class="dropdown-item" routerLink="foods/wet-dog" (click)="toggleMenu()">
+            <a>wet foods</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item" (click)="toggleMenu()">
+        <a routerLink="contact">contact</a>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+*{
+    font-family: Poppins;
+    color: #555555;
+}
+
+section{
+    text-align: center;
+}
+
+
+.box-img > img{
+    position: relative;
+    z-index: 10;
+    /* height: 413px;
+    width: 372px; */
+    height: 100%;
+    width: 50%;
+    cursor: pointer;    
+}
+
+
+img:hover{
+    transition: 0.5s ease;
+    transform: scale(0.9);
+}
+
+img:not(:hover){
+    transition: 0.5s ease;
+    transform: scale(1);
+}
+
+.col-md-4 > p{
+    font-size: 16px;    
+    text-transform: uppercase;    
+}
+
+.col-md-4 > h5{
+    color: #F57E25;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+

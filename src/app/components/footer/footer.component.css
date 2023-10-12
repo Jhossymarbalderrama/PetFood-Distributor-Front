@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: #1b1b1b;
+    width: 100%;   
+    font-family: Poppins, sans-serif; 
+}
+
+.row{
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.col-md-6{
+    color: white;    
+}
+
+.col-md-6 > span{
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem 0rem;
+}
+
+#copyright{
+    margin-top: 1rem;
+}
+
+
+ul > span{
+    margin: 0rem 1rem;
+}
+
+span{
+    font-size: 13px;    
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (max-with: 767px) {
+
+}

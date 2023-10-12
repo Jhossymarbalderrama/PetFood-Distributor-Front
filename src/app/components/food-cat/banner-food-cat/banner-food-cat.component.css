@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section{
+    height: 360px;
+    overflow: hidden;
+    padding: 1rem 8rem;    
+}
+
+.banner{
+    background: linear-gradient(#000000ad, #0000007c), url("../../../../assets/img/foods/banner/cats.jpg") center/cover no-repeat;
+}
+
+
+.box-content{
+    height: 400px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;    
+}
+
+span > p{
+    font-size: 16px;
+    font-family: Poppins;    
+}
+
+span > h4{
+    color: #F57E25;    
+    font-size: 38px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+
+h4 > span{
+    color: white;
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width: 767px) {
+    section{   
+        /* height: auto; */
+        overflow: hidden;
+        padding: 1rem 2rem;    
+    }
+
+    span > p{
+        font-size: 1.2vh; 
+    }
+
+    span > h4{ 
+        font-size: 2.5vh;
+    }
+    
+}

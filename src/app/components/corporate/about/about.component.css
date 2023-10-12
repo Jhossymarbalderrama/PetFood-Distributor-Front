@@ -1,0 +1,35 @@
+*{
+    font-family: Poppins - 700;
+}
+
+.col-md-6 > h4{
+    color: #F57E25;
+    font-family: Oswald - 100;
+    font-size: 18px;
+}
+
+.col-md-6 > h1{
+    font-size: 45px;
+    font-weight: bolder;    
+}
+
+.col-md-6 > p, .row > p{
+    color: #55585A;
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width: 767px) {
+    section{
+        padding: 1rem;
+    }
+        
+}

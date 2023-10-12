@@ -1,0 +1,116 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.box-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.box-title>p {
+  font-size: 5vh;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+}
+
+p {
+  color: #F57E25;
+}
+
+p>span {
+  color: white;
+}
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.keen-slider--vertical{
+ 
+}
+
+img{
+  height: 100%;
+  width: 200px;
+}
+
+
+.slider-box {
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: #F57E25;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+}
+
+
+.arrow--left {
+  left: 5px;
+}
+
+.arrow--right {
+  left: auto;
+  right: 5px;
+}
+
+.arrow--disabled {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.dot {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: #838383;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: #000;
+}
+
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and ( min-width: 768px) and (max-width: 1023px) {
+  .box-title>p {
+    font-size: 3.5vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .box-title>p {
+    font-size: 2.5vh;
+  }
+}

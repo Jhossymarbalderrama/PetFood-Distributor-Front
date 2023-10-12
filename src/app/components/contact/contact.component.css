@@ -1,0 +1,69 @@
+section {
+    font-family: Poppins;
+    padding: 2rem 6rem;
+}
+
+.col-md-6 > iframe{
+    height: 100%;
+    width: 100%;
+}
+
+h4 {
+    color: #F57E25;
+    font-size: 18px;    
+}
+
+h1{
+    font-size: 50px;
+    color: #222222;
+    font-weight: bold;
+}
+
+.col-md-6 > p{
+    font-size: 16px;
+    color:  #555555;
+}
+
+.contacts > p{
+    font-size: 16px;
+    color: #999999;
+}
+
+input {
+    font-size: 15px;
+    color: #373a3c;
+    border: 1px solid #EDEDED;
+}
+
+#mensaje {
+    min-width: 100%;
+    height: 96px;
+    border: 1px solid #EDEDED;
+}
+
+.btn {
+    background-color: #F57E25;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    height: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width: 767px) {
+    section {        
+        padding: 1rem;
+    }
+
+    .col-md-6{
+        margin: 1rem 0rem;
+    }
+}

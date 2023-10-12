@@ -1,0 +1,50 @@
+section{
+    padding: 1rem 4rem;
+}
+
+.col-md-4 > h6{
+    font-size: 18px;
+    font-family: Poppins - 700;
+    text-transform: uppercase;
+    color: #F57E25;    
+}
+
+.col-md-4 > img{
+    height: auto;
+    width: 342px;
+}
+
+.col-md-4 > h1{
+    font-size: 50px;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+.col-md-2{
+    font-family: Poppins;
+    font-size: 21px;
+    color: #F57E25;   
+    font-weight: bold;
+}
+
+.col-md-10 > p{
+    font-family: Poppins;
+    font-size: 16px;
+    color: #555555;
+}
+
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width: 767px) {
+    section{
+        padding: 1rem;
+    }
+        
+}

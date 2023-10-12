@@ -1,0 +1,61 @@
+<app-banner-contact></app-banner-contact>
+
+<section class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13126.764993208239!2d-58.37302059718926!3d-34.66249956010772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3335230bd052b%3A0x9d632a18eea90a31!2sAvellaneda%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1695663517981!5m2!1sen!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-6">
+            <h4>Contáctenos</h4>
+
+            <!-- <div *ngFor="let user of users$ | async">
+                <p><span>ID: </span>{{user.id}}</p>
+                <p><span>Usuario: </span>{{user.user}}</p>
+                <p><span>Password: </span>{{user.password}}</p>
+            </div> -->
+            <h1>Enviar Mensaje</h1>
+            <p>Puedes ponerte en contacto con nosotros sobre cualquier cosa que tengas en mente.</p>
+
+            <div class="contacts" style="padding-left: 10px;">
+                <p> <i class="fa-solid fa-map-location-dot"></i> Av. Alexander Arevalo # 544</p>
+                <p> <i class="fa-solid fa-square-phone"></i> +54 9 11 4444 4444</p>                
+                <p> <i class="fa-solid fa-envelope"></i> example@gmail.com</p>
+            </div>
+
+            <form style="background-color: #d6d6d6; padding: 1.5rem 2rem; border-radius: 5px;">
+                <div class="mb-2">
+                    <input type="text" class="form-control" id="nombre_apellido" placeholder="Nombre Apellido">
+                </div>
+                <div class="mb-2">
+                    <input type="text" class="form-control" id="nombre_empresa" placeholder="Nombre de la empresa">
+                </div>
+
+                <div class="mb-2">
+                    <input type="text" class="form-control" id="objeto_actividad" placeholder="Pais">
+                </div>
+
+                <div class="mb-2">
+                    <input type="text" class="form-control" id="region" placeholder="Correo electrónico">
+                </div>
+                <div class="mb-2">
+                    <select class="form-select">
+                        <option selected>Selecciones Tipo</option>
+                        <option value="1">Clínica Veterinaria</option>
+                        <option value="2">Tienda de Animale</option>
+                        <option value="3">Mayorista</option>
+                        <option value="4">Distribuidor</option>
+                        <option value="5">Otro</option>
+                    </select>
+                </div>
+
+                <div class="mb-2">
+                    <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

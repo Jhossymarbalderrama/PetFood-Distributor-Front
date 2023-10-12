@@ -1,0 +1,79 @@
+**********************************************************************
+*************  Documentacion de Tecnologias Utilizadas   *************
+
+
+-Angular CLI version 16.1.4.
+
+-Librerias:
+    --Boostrap:  bootstrap@v5.3.2           | https://getbootstrap.com/
+    --Google Fonts                          | https://fonts.google.com/
+    n--Swiper Sliders                       | https://swiperjs.com/demos
+    n--Keen-slider                          | https://keen-slider.io/examples
+    --JSON Placeholder                      | https://jsonplaceholder.typicode.com/
+    --AOS animation                         | https://michalsnik.github.io/aos/  | https://github.com/michalsnik/aos
+                                            | Agregar el aos en css/script css angular.json ["./node_modules/aos/dist/aos.css"] ["./node_modules/aos/dist/aos.js"]
+                                            |    
+                                            |   import * as AOS from 'aos';    
+                                            |
+                                            |    ngOnInit(): void {
+                                            |        AOS.init()
+                                            |        window.addEventListener('load',AOS.refresh);
+                                            |    }
+                                            |
+                                            | installar fixed error : npm i --save-dev @types/aos
+
+header
+    -menu
+        menu-items
+
+router-outlet
+    -home    
+        banner-home    
+
+        what we do(que hacemos)
+            *banner-home(slider?)
+        inspiring(que nos inspira)
+            *banner-home(slider?)
+        our nutrition(nuestra nutricion)
+            *banner-home(slider?)
+
+    -corporate  
+        banner-corporation      
+
+        about
+            *banner-corporation
+        history
+            *banner-corporation
+        catalog
+            *banner-corporation
+        export
+            *banner-corporation
+        about alltech
+            *banner-corporation
+        dealership
+            *banner-corporation
+
+    -cat food   
+        banner-food-cat    
+
+        food-dry-cat
+            *banner-food-cat
+        food-wet-cat
+            *banner-food-cat 
+
+    -dog food  
+        banner-food-dog
+
+        food-dry-dog
+            *banner-food-dog
+        food-wet-dog
+            *banner-food-dog
+
+    -contact
+        *banner-contact
+        
+    -error
+
+footer
+    -navigation-footer
+    -footer
