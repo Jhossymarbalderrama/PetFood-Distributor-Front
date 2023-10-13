@@ -6,7 +6,7 @@
 }
 
 section{
-    min-height: 90vh;
+    min-height: 70vh;
     background: linear-gradient(#000000b7, #000000b7),
         url("../../../../assets/img/pets.jpg") center/cover no-repeat;
 }
@@ -15,7 +15,7 @@ h1{
     font-family: Cedarville Cursive;    
     font-weight: 500;
     color: white;
-    font-size: 5vw;
+    font-size: 3.5vw;
     letter-spacing: 2px;
 }
 
@@ -26,7 +26,8 @@ p{
 
 .box-content{
     width: 100%;
-    min-height: 90vh;
+    min-height: 70vh;
+    padding: 5rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -43,7 +44,7 @@ p{
 
 .content > p{    
     padding: 0px;
-    margin: 1rem 0rem;
+    margin: 1rem 0rem;    
 }
 
 @media screen and (min-width: 1024px) {
@@ -62,5 +63,11 @@ p{
     .content > p{    
         padding: 0px;
         margin: 1rem 0rem;
+
+        font-size: 1rem;
+    }
+
+    h1{
+        font-size: 8vw;
     }
 }

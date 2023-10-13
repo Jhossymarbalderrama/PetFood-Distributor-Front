@@ -43,49 +43,50 @@ export class FoodDogSliderComponent {
 
   ngAfterViewInit(): void {
     
-    if(this.screenWidth >= 1024){
-      this.slider = new KeenSlider(this.sliderRef.nativeElement, {
-        initial: this.currentSlide,
-        slideChanged: (s) => {
-          this.currentSlide = s.track.details.rel;
-        },
-        loop: true,
-        mode: "free",
-        slides: {        
-          perView: 5,
-          spacing: 15
-        }
-      });
-    }else if (this.screenWidth >= 768 && this.screenWidth < 1024){
-      this.slider = new KeenSlider(this.sliderRef.nativeElement, {
-        initial: this.currentSlide,
-        slideChanged: (s) => {
-          this.currentSlide = s.track.details.rel;
-        },
-        loop: true,
-        mode: "free",
-        slides: {        
-          perView: 4,
-          spacing: 15
-        }
-      });
-    }else if(this.screenWidth < 768){
-      this.slider = new KeenSlider(this.sliderRef.nativeElement, {
-        initial: this.currentSlide,
-        slideChanged: (s) => {
-          this.currentSlide = s.track.details.rel;
-        },
-        loop: true,
-        mode: "free",
-        slides: {        
-          perView: 1,
-          spacing: 15
-        }
-      });
-    }
-    
-
-    this.dotHelper = [...Array(this.slider.track.details.slides.length).keys()];
+    setTimeout(() => {
+      if(this.screenWidth >= 1024){
+        this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+          initial: this.currentSlide,
+          slideChanged: (s) => {
+            this.currentSlide = s.track.details.rel;
+          },
+          loop: true,
+          mode: "free",
+          slides: {        
+            perView: 5,
+            spacing: 15
+          }
+        });
+      }else if (this.screenWidth >= 768 && this.screenWidth < 1024){
+        this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+          initial: this.currentSlide,
+          slideChanged: (s) => {
+            this.currentSlide = s.track.details.rel;
+          },
+          loop: true,
+          mode: "free",
+          slides: {        
+            perView: 4,
+            spacing: 15
+          }
+        });
+      }else if(this.screenWidth < 768){
+        this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+          initial: this.currentSlide,
+          slideChanged: (s) => {
+            this.currentSlide = s.track.details.rel;
+          },
+          loop: true,
+          mode: "free",
+          slides: {        
+            perView: 1,
+            spacing: 15
+          }
+        });
+      }
+          
+      this.dotHelper = [...Array(this.slider.track.details.slides.length).keys()];
+    }, 1500);
   }  
 
   ngOnDestroy() {

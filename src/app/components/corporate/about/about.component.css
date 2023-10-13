@@ -13,6 +13,22 @@
     font-weight: bolder;    
 }
 
+.col-md-6 > img{
+    border-radius: 3px;
+}
+
+.col-md-6 > img:hover{
+    transition: 0.8s ease;    
+    filter: grayscale(80%);
+    cursor: pointer;
+}
+
+.col-md-6 > img:not(:hover){
+    transition: 0.5s ease;    
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
 .col-md-6 > p, .row > p{
     color: #55585A;
     font-size: 16px;

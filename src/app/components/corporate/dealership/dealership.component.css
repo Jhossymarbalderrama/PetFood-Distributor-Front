@@ -25,6 +25,22 @@ section > h4{
     align-items: center;
 }
 
+.keen-slider__slide{
+    border-radius: 3px;
+}
+
+.keen-slider > .keen-slider__slide:hover{
+    transition: 0.6s ease;    
+    filter: grayscale(80%);
+    cursor: pointer;
+}
+
+.keen-slider > .keen-slider__slide:not(:hover){
+    transition: 0.5s ease;    
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
 label{
     font-size: 11px;
     color: #222222;

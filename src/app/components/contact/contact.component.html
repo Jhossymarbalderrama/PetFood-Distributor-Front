@@ -6,20 +6,22 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13126.764993208239!2d-58.37302059718926!3d-34.66249956010772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3335230bd052b%3A0x9d632a18eea90a31!2sAvellaneda%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1695663517981!5m2!1sen!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="col-md-6">
-            <h4>Contáctenos</h4>
+            <!-- <h4>Contáctenos</h4> -->
+            <h4>{{article?.subtitle}}</h4>
 
-            <!-- <div *ngFor="let user of users$ | async">
-                <p><span>ID: </span>{{user.id}}</p>
-                <p><span>Usuario: </span>{{user.user}}</p>
-                <p><span>Password: </span>{{user.password}}</p>
-            </div> -->
-            <h1>Enviar Mensaje</h1>
-            <p>Puedes ponerte en contacto con nosotros sobre cualquier cosa que tengas en mente.</p>
+            <!-- <h1>Enviar Mensaje</h1> -->
+            <h1>{{article?.title}}</h1>
+            
+            <!-- <p>Puedes ponerte en contacto con nosotros sobre cualquier cosa que tengas en mente.</p> -->
+            <p>{{article?.description}}</p>
 
             <div class="contacts" style="padding-left: 10px;">
-                <p> <i class="fa-solid fa-map-location-dot"></i> Av. Alexander Arevalo # 544</p>
+                <!-- <p> <i class="fa-solid fa-map-location-dot"></i> Av. Alexander Arevalo # 544</p>
                 <p> <i class="fa-solid fa-square-phone"></i> +54 9 11 4444 4444</p>                
-                <p> <i class="fa-solid fa-envelope"></i> example@gmail.com</p>
+                <p> <i class="fa-solid fa-envelope"></i> example@gmail.com</p> -->
+                <p> <i class="fa-solid fa-map-location-dot"></i> {{contact?.address}}</p>
+                <p> <i class="fa-solid fa-square-phone"></i> {{contact?.smartphone}}</p>                
+                <p> <i class="fa-solid fa-envelope"></i> {{contact?.email}}</p>
             </div>
 
             <form style="background-color: #d6d6d6; padding: 1.5rem 2rem; border-radius: 5px;">

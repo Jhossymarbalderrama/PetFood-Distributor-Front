@@ -3,11 +3,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 3px;
 }
 
 .col-md-4 > img{
     height: 530px;
-    /* width: 502px;         */
+    width: 502px;            
+}
+
+.col-md-4 > img:hover{
+    transition: 0.6s ease;    
+    filter: grayscale(80%);
+    cursor: pointer;
+}
+
+.col-md-4 > img:not(:hover){
+    transition: 0.5s ease;    
+    filter: grayscale(0%);
+    cursor: pointer;
 }
 
 .col-md-8{

@@ -11,7 +11,21 @@ section{
 .col-md-4 > img{
     height: 630px;
     width: 423px;
+    border-radius: 3px;
 }
+
+.col-md-4 > img:hover{
+    transition: 0.8s ease;    
+    filter: grayscale(80%);
+    cursor: pointer;
+}
+
+.col-md-4 > img:not(:hover){
+    transition: 0.5s ease;    
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
 
 .col-md-6 > p{
     color: #555;    

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import * as AOS from 'aos';
 
 @Component({
@@ -6,10 +6,17 @@ import * as AOS from 'aos';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
+
+
+  constructor() {
+
+  }
 
   ngOnInit(): void {
     AOS.init()
-    window.addEventListener('load',AOS.refresh);
+    window.addEventListener('load', AOS.refresh);
   }
+
+
 }

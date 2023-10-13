@@ -16,6 +16,12 @@ import { ErrorHandlerService } from './error-handler.service';
 export class AuthService {
   private url: string = "http://localhost:3000/";
 
+  private userLog: User = {
+    'id': 2,
+    'user': 'admin',
+    'password': 'admin'
+  }
+
   httpOptions: { headers: HttpHeaders} = {
     headers: new HttpHeaders({ "Content-Type": "application/json" }),
   };
@@ -24,6 +30,18 @@ export class AuthService {
     private http: HttpClient,
     private errorHandlerService: ErrorHandlerService
   ) { }
+
+  getURL():string{
+    return this.url;
+  }
+
+  getHttpOptions():any{
+    return this.httpOptions;
+  }
+  
+  getUserLog():User{
+    return this.userLog;
+  }
 
   fetAllUser():Observable<User[]>{
     return this.http

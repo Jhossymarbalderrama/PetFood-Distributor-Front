@@ -70,8 +70,9 @@ img {
 }
 
 .logo {
-    height: 60px;
+    height: 65px;    
     width: auto;
+    padding-left: 30px;
 }
 
 
@@ -153,7 +154,7 @@ a {
     border-color: transparent;
     transition: 0.3s ease;
     padding: 0.05rem 0.6rem;
-
+    margin-top: 0.8rem;
     cursor: pointer;
 }
 
@@ -162,9 +163,7 @@ a {
     background: #9e4d10;
 }
 
-.logo {
-    height: 50px;
-}
+
 
 
 
