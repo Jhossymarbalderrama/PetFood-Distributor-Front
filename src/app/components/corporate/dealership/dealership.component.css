@@ -2,12 +2,12 @@ section{
    font-family: Poppins; 
 }
 
-section > h4{
+h4{
     color: #F57E25;
     font-size: 18px;
 }
 
-.col-md-7 > h1{
+h1{
     font-size: 50px;
     color: #222222;
     font-weight: bold;

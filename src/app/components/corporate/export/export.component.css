@@ -1,12 +1,11 @@
-
-*{
-    font-family: Poppins;
-}
-
 section{
     padding: 2rem 4rem;    
 }
 
+.colums {
+    column-count: 2;
+    column-gap: 20px;
+}
 
 .col-md-4 > img{
     height: 630px;
@@ -27,20 +26,20 @@ section{
 }
 
 
-.col-md-6 > p{
-    color: #555;    
+p{
+    color: #424242;    
 }
 
 .col-md-8{
     padding: 0rem 6rem;    
 }
 
-.col-md-8 > h6{
+h6{
     color: #F57E25;
     font-weight: 600;
 }
 
-.col-md-8 > h1{
+h1{
     font-weight: bolder;
     font-size: 50px;
 }
@@ -49,15 +48,15 @@ button{
     background-color: #F57E25;
     border-radius: 5px;
     padding: 5px 25px;
-    border: 1px solid #555;
-    font-weight: bold;
+    border: 1px solid #424242;    
     cursor: pointer;
 }
 
 button:hover{
     transition: 0.2s ease;
     background-color: #bb5609;
-    border: 1px solid #555;
+    border: 1px solid #424242;
+    color: white;
 }
 
 
@@ -84,12 +83,12 @@ button:hover{
         padding: 0rem 5rem;    
     }
     
-    .col-md-8 > h6{
+    h6{
         color: #F57E25;
         font-weight: 600;
     }
     
-    .col-md-8 > h1{
+    h1{
         font-weight: bolder;
         font-size: 50px;
     }

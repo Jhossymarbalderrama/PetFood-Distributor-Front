@@ -25,6 +25,7 @@ header {
 .box-content > h1{
     color: white;       
     font-family: Cedarville Cursive;
+    /* text-transform: capitalize; */
     font-size: 5vw;
     letter-spacing: 2px;    
     text-shadow: 3px 3px 2px black;    

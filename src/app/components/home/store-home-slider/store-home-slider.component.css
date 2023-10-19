@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 
 section{
@@ -10,7 +10,8 @@ section{
     height: 100%;
     display: flex-box;
     justify-content: center;  
-    background-color: #333333;  
+    /* background-color: #333333;   */
+    background-color: #ffffff;
 }
 
 .box-content{    

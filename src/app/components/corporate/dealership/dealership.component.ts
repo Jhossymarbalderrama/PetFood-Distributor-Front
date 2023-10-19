@@ -1,5 +1,7 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, OnInit } from '@angular/core';
 import KeenSlider, { KeenSliderInstance } from "keen-slider"
+import { Article } from 'src/app/models/article';
+import { ArticleService } from 'src/app/services/article.service';
 
 @Component({
   selector: 'app-dealership',
@@ -8,9 +10,28 @@ import KeenSlider, { KeenSliderInstance } from "keen-slider"
     '../../../../../node_modules/keen-slider/keen-slider.min.css',
     './dealership.component.css']
 })
-export class DealershipComponent {
-  @ViewChild("sliderRef") sliderRef: ElementRef<HTMLElement> | any
-  slider: KeenSliderInstance | any = null
+export class DealershipComponent  implements OnInit{
+
+  @ViewChild("sliderRef") sliderRef: ElementRef<HTMLElement> | any;
+  slider: KeenSliderInstance | any = null;
+
+  public articleFirst?: Article;
+  public articles?: Article | any;
+  
+  constructor(
+    private ArticleService: ArticleService
+  ){
+    let id_section_About: number = 7;
+    this.ArticleService.getContactArticleXSection(id_section_About).subscribe((articleData: any) =>{
+      this.articleFirst = articleData.shift();
+      this.articles = articleData;      
+    });
+  }
+
+  ngOnInit(): void {
+    
+  }
+
   ngAfterViewInit() {
     this.slider = new KeenSlider(
       this.sliderRef.nativeElement,
@@ -53,4 +74,5 @@ export class DealershipComponent {
   ngOnDestroy() {
     if (this.slider) this.slider.destroy()
   }
+
 }
