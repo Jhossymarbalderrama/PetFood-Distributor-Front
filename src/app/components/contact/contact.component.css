@@ -1,3 +1,4 @@
+
 section {
     font-family: Poppins;
     padding: 2rem 6rem;
@@ -10,8 +11,9 @@ section {
 }
 
 h4 {
-    color: #F57E25;
+    color: #F57E25;    
     font-size: 18px;    
+    font-weight: bold;
 }
 
 h1{
