@@ -52,7 +52,7 @@ img{
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
-  fill: #fff;
+  fill: #252525;
   cursor: pointer;
 }
 
