@@ -1,27 +1,51 @@
-# Petfood
+# 🐶 Pet Food Premium 🐱
+<p>Pagina web dedicada a distribuidoras de alimentos para mascotas.</p>
+<p><a href='https://pet-food-premium-jbr.web.app/' target='_blank'>🚀 Web Pet Food Premium 👈<a/></p>
+  
+## 📌 🖥️ Instalación  📱
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+| Comando | Description |
+| --- | --- |
+| `npm install` | Instala todas las dependencias necesarias |
+| `ng server -o` | Ejecuta y abre el programa en la siguiente direccion predeterminada: `http://localhost:4200/` |
 
-## Development server
+## 📌 🖥️ Tecnologías Utilizadas  📱
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### FRONTEND - (Hosting Firebase)
+| Nombre | Version | documentacion |
+| --- | --- | --- |
+| `Angular CLI` |  v16.1.4 | https://angular.io/cli |
+| `Firebase` | v10.5.0 | https://firebase.google.com/docs/web/setup?hl=es-419 |
+| `Bootstrap` |  v5.3.2 | https://getbootstrap.com/docs/5.3/getting-started/download/ |
+| `Keen-slider` | v6.8.6 | https://keen-slider.io/docs |
+| `AOS animation` |  v2.3.4 | https://github.com/michalsnik/aos |
 
-## Code scaffolding
+  
+### BACKEND - (Hosting Render)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| Nombre | Version | documentacion |
+| --- | --- | --- |
+| `Node Js` |  v18.16.1 | https://nodejs.org/en/about |
+| `Express` | v4.18.2 | https://expressjs.com/en/starter/installing.html |
+| `mysql2` |  v3.6.1 | https://www.npmjs.com/package/mysql2 |
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### BASE DE DATOS - (Hosting Clever-Cloud)
+| Nombre | Version | documentacion |
+| --- | --- | --- |
+| `MySQL` |  v5.2.1 |  |
+| `Apache` | v2.4.56 | |
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Responsive Página Web
 
-## Running end-to-end tests
+<p><a href='https://weather-jbr.web.app/' target='_blank'>🚀 Web Pet Food Premium 👈<a/></p>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<p align="center">
+  <img src='https://github.com/Jhossymarbalderrama/petfood/assets/52534649/97ad1c82-6584-4558-a7b9-c91d4fdc88c5'/>
+</p>
 
-## Further help
+| Macbooks y Tablets  | Smartphones |
+| ------------- | ------------- |
+| <img src='https://github.com/Jhossymarbalderrama/petfood/assets/52534649/1eb2df0e-9d8c-4983-8816-918f25f6cc6d' width="750px" height="auto" /> |  <img src='https://github.com/Jhossymarbalderrama/petfood/assets/52534649/704e5d92-a5d1-4139-a2d6-cb17613cd91c' width="100%" height="100%" />  |
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
