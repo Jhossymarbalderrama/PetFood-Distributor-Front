@@ -7,7 +7,9 @@
 section{
     width: 100%;
     min-height: 400px;
-    background-image: url("../../../../assets/img/dog_funny.jpg");
+    /* background-image: url("../../../../assets/img/dog_funny.jpg"); */
+    background: linear-gradient(#00000067, #00000083),
+        url("../../../../assets/img/dog_funny.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: calc(100%) calc(35%); 

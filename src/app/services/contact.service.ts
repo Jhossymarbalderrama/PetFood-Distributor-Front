@@ -13,6 +13,10 @@ import { ArticleService } from './article.service';
 })
 export class ContactService {
   
+  userDataContact: any;
+  articleSectionContact: any;
+
+
   constructor(
     private http: HttpClient,
     private errorHandlerService: ErrorHandlerService,

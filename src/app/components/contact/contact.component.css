@@ -58,7 +58,14 @@ input {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    section {        
+        padding: 1rem;
+        margin: 0.5rem 2rem;
+    }
 
+    .col-md-6{
+        margin: 1rem 0rem;
+    }
 }
 
 @media screen and (max-width: 767px) {

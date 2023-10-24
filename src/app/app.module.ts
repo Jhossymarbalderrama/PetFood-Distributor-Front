@@ -35,6 +35,9 @@ import { CatalogComponent } from './components/corporate/catalog/catalog.compone
 import { ExportComponent } from './components/corporate/export/export.component';
 import { AboutAlltechComponent } from './components/corporate/about-alltech/about-alltech.component';
 import { DealershipComponent } from './components/corporate/dealership/dealership.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -74,7 +77,9 @@ import { DealershipComponent } from './components/corporate/dealership/dealershi
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore())
   ],
   providers: [],
   bootstrap: [AppComponent]

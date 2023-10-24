@@ -20,13 +20,23 @@ export class ContactComponent implements OnInit{
     private AuthService:AuthService,
     private ContactService: ContactService
   ){
-    this.ContactService.getContact().subscribe(contactData =>{
-      this.contact = contactData;     
-    });
+    if(this.ContactService.userDataContact){
+      this.contact = this.ContactService.userDataContact;
+    }else{
+      this.ContactService.getContact().subscribe(contactData =>{
+        this.contact = contactData;    
+        this.ContactService.userDataContact = this.contact; 
+      });
+    }
 
-    this.ContactService.getContactArticleXSection().subscribe((articlesData: any) =>{
-      this.article = articlesData[0];
-    })
+    if(this.ContactService.articleSectionContact){
+      this.article = this.ContactService.articleSectionContact;
+    }else{
+      this.ContactService.getContactArticleXSection().subscribe((articlesData: any) =>{
+        this.article = articlesData[0];
+        this.ContactService.articleSectionContact = this.article;
+      })
+    }
   }
 
   ngOnInit(): void {    

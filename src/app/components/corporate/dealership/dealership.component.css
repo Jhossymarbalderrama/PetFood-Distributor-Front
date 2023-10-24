@@ -27,6 +27,8 @@ h1{
 
 .keen-slider__slide{
     border-radius: 3px;
+    height: auto;
+    width: 100%;
 }
 
 .keen-slider > .keen-slider__slide:hover{
@@ -118,4 +120,34 @@ input{
 
 label{
  font-weight: bold;
+}
+
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .row > .col-md-8, .row > .col-md-4{
+        width: 100%;
+    }
+    
+    section > .row > .col-md-4{
+        padding: 1.5rem 0rem;
+    }
+
+    .keen-slider__slide{
+        height: auto;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .row > .col-md-8, .row > .col-md-4{
+        width: 100%;
+    }
+     
+    section > .row > .col-md-4{
+        padding: 1.5rem;
+    }
 }

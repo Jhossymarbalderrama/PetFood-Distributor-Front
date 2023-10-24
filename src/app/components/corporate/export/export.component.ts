@@ -7,22 +7,29 @@ import { ArticleService } from 'src/app/services/article.service';
   templateUrl: './export.component.html',
   styleUrls: ['./export.component.css']
 })
-export class ExportComponent implements OnInit{
+export class ExportComponent implements OnInit {
 
   public articleFirst?: Article;
   public articles?: Article | any;
 
   constructor(
     private ArticleService: ArticleService
-  ){
-    let id_section_About: number = 5;
-    this.ArticleService.getContactArticleXSection(id_section_About).subscribe((articleData: any) =>{
-      this.articleFirst = articleData.shift();
-      this.articles = articleData;      
-    });
+  ) {
+    if (this.ArticleService.exportArticles && this.ArticleService.exportFirstElement) {
+      this.articleFirst = this.ArticleService.exportFirstElement;
+      this.articles = this.ArticleService.exportArticles;
+    } else {
+      let id_section_About: number = 5;
+      this.ArticleService.getContactArticleXSection(id_section_About).subscribe((articleData: any) => {
+        this.articleFirst = articleData.shift();
+        this.articles = articleData;
+        this.ArticleService.exportFirstElement = this.articleFirst;
+        this.ArticleService.exportArticles = this.articles;
+      });
+    }
   }
 
   ngOnInit(): void {
-    
+
   }
 }

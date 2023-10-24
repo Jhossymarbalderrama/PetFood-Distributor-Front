@@ -10,16 +10,23 @@ import { ArticleService } from 'src/app/services/article.service';
 export class AboutComponent implements OnInit{
   
   public articleFirst?: Article;
-  public articles?: Article | any;
+  public articles?: Article[] | undefined;
 
   constructor(
     private ArticleService: ArticleService
   ){
+   if(this.ArticleService.aboutArticles){
+    this.articleFirst = this.ArticleService.aboutFirstElement;
+    this.articles = this.ArticleService.aboutArticles;
+   }else{
     let id_section_About: number = 2;
-    this.ArticleService.getContactArticleXSection(id_section_About).subscribe((articleData: any) =>{
+    this.ArticleService.getContactArticleXSection(id_section_About).subscribe((articleData: any) =>{           
       this.articleFirst = articleData.shift();
-      this.articles = articleData;      
+      this.articles = articleData;    
+      this.ArticleService.aboutFirstElement = this.articleFirst;
+      this.ArticleService.aboutArticles = this.articles;  
     });
+   }
   }
 
   ngOnInit(): void {

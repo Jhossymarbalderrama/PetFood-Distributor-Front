@@ -14,7 +14,8 @@ import { ErrorHandlerService } from './error-handler.service';
   providedIn: 'root'
 })
 export class AuthService {
-  private url: string = "http://localhost:3000/";
+  // private url: string = "http://localhost:3000/";
+  private url: string = "https://api-petfoodpremium.onrender.com/";
 
   private userLog: User = {
     'id': 2,

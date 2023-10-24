@@ -10,26 +10,34 @@ import { ArticleService } from 'src/app/services/article.service';
     '../../../../../node_modules/keen-slider/keen-slider.min.css',
     './dealership.component.css']
 })
-export class DealershipComponent  implements OnInit{
+export class DealershipComponent implements OnInit {
 
   @ViewChild("sliderRef") sliderRef: ElementRef<HTMLElement> | any;
   slider: KeenSliderInstance | any = null;
 
   public articleFirst?: Article;
   public articles?: Article | any;
-  
+
   constructor(
     private ArticleService: ArticleService
-  ){
-    let id_section_About: number = 7;
-    this.ArticleService.getContactArticleXSection(id_section_About).subscribe((articleData: any) =>{
-      this.articleFirst = articleData.shift();
-      this.articles = articleData;      
-    });
+  ) {
+    if (this.ArticleService.dealershipFirstElement && 
+        this.ArticleService.dealershipArticles) {
+          this.articleFirst = this.ArticleService.dealershipFirstElement;
+          this.articles = this.ArticleService.dealershipArticles;
+    } else {
+      let id_section_About: number = 7;
+      this.ArticleService.getContactArticleXSection(id_section_About).subscribe((articleData: any) => {
+        this.articleFirst = articleData.shift();
+        this.articles = articleData;
+        this.ArticleService.dealershipFirstElement = this.articleFirst;
+        this.ArticleService.dealershipArticles = this.articles;
+      });
+    }
   }
 
   ngOnInit(): void {
-    
+
   }
 
   ngAfterViewInit() {

@@ -10,6 +10,25 @@ import { AuthService } from './auth.service';
 })
 export class ArticleService {
 
+  // Section About
+  aboutFirstElement: Article | undefined;
+  aboutArticles: Article[] | undefined;
+
+  // Section History
+  historyArticles:  Article[] | undefined;
+
+  // Section Export
+  exportFirstElement: Article | undefined;
+  exportArticles: Article[] | undefined;
+
+  // Section About All
+  aboutAllFirstElement: Article | undefined;
+  aboutAllArticles: Article[] | undefined;
+
+  // Section Dealership
+  dealershipFirstElement: Article | undefined;
+  dealershipArticles: Article[] | undefined
+
   constructor(
     private http: HttpClient,
     private errorHandlerService: ErrorHandlerService,

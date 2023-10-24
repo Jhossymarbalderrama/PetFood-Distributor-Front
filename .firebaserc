@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "pet-food-premium-jbr": {
+      "hosting": {
+        "petfoot": [
+          "pet-food-premium-jbr"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pet-food-premium-jbr"
+  }
+}

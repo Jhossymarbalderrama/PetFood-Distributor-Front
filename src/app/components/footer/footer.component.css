@@ -2,19 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Poppins, sans-serif; 
 }
 
 footer{
     background-color: #1b1b1b;
     width: 100%;   
-    font-family: Poppins, sans-serif; 
 }
 
 .row{
     display: flexbox;
     justify-content: center;
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 0.75rem 0rem;
 }
 
 .col-md-6{
@@ -23,8 +23,7 @@ footer{
 
 .col-md-6 > span{
     display: flex;
-    justify-content: center;
-    padding: 0.3rem 0rem;
+    justify-content: center;    
 }
 
 #copyright{
