@@ -12,7 +12,7 @@
 ## 📌 🖥️ Tecnologías Utilizadas  📱
 
 ### FRONTEND - (Hosting Firebase)
-| Nombre | Version | documentacion |
+| Nombre | Version | documentación |
 | --- | --- | --- |
 | `Angular CLI` |  v16.1.4 | https://angular.io/cli |
 | `Firebase` | v10.5.0 | https://firebase.google.com/docs/web/setup?hl=es-419 |
