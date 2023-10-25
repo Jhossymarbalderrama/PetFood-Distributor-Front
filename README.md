@@ -1,10 +1,10 @@
 # 🐶 Pet Food Premium 🐱
-<p>Pagina web dedicada a distribuidoras de alimentos para mascotas.</p>
+<p>Página web dedicada a distribuidoras de alimentos para mascotas.</p>
 <p><a href='https://pet-food-premium-jbr.web.app/' target='_blank'>🚀 Web Pet Food Premium 👈<a/></p>
   
 ## 📌 🖥️ Instalación  📱
 
-| Comando | Description |
+| Comando | descripción |
 | --- | --- |
 | `npm install` | Instala todas las dependencias necesarias |
 | `ng server -o` | Ejecuta y abre el programa en la siguiente direccion predeterminada: `http://localhost:4200/` |
@@ -23,7 +23,7 @@
   
 ### BACKEND - (Hosting Render)
 
-| Nombre | Version | documentacion |
+| Nombre | Version | documentación |
 | --- | --- | --- |
 | `Node Js` |  v18.16.1 | https://nodejs.org/en/about |
 | `Express` | v4.18.2 | https://expressjs.com/en/starter/installing.html |
@@ -31,7 +31,7 @@
 
 
 ### BASE DE DATOS - (Hosting Clever-Cloud)
-| Nombre | Version | documentacion |
+| Nombre | Version | documentación |
 | --- | --- | --- |
 | `MySQL` |  v5.2.1 |  |
 | `Apache` | v2.4.56 | |
