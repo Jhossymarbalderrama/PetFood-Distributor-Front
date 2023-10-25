@@ -1,18 +1,44 @@
 # 🐶 Pet Food Premium 🐱
 <p>Página web dedicada a distribuidoras de alimentos para mascotas.</p>
-<p><a href='https://pet-food-premium-jbr.web.app/' target='_blank'>🚀 Web Pet Food Premium 👈<a/></p>
-  
-## 📌 🖥️ Instalación  📱
+<p>Demo: <a href='https://pet-food-premium-jbr.web.app/' target='_blank'>🚀 Web Pet Food Premium 👈<a/></p>
 
-| Comando | descripción |
+<hr>
+
+## 📌 🖥️ Requisitos y Instalación del Proyecto 📱
+
+###### Tener instalado Node js
+
+| Nombre | Version | Documentación |
+| --- | --- | --- |
+| `Node Js` | v18.16.1 | https://nodejs.org/en/download |
+|  `npm` | v9.5.1  | |
+
+###### Angular CLI 
+
+Instalar Angular CLI 
+```
+npm install -g @angular/cli
+```
+
+###### Levantar Proyecto Web
+Luego de tener una copia del repositorio local, correr los siguentes comandos en la terminal del proyecto. 
+
+```
+$ npm install
+$ ng server -o 
+```
+
+| Comando | Descripción |
 | --- | --- |
 | `npm install` | Instala todas las dependencias necesarias |
-| `ng server -o` | Ejecuta y abre el programa en la siguiente direccion predeterminada: `http://localhost:4200/` |
+| `ng server -o` | Ejecuta y abre el programa en la siguiente dirección predeterminada: `http://localhost:4200/` |
 
-## 📌 🖥️ Tecnologías Utilizadas  📱
+<hr>
 
-### FRONTEND - (Hosting Firebase)
-| Nombre | Version | documentación |
+## 📌 🖥️ Tecnologías - Documentación  📱
+
+###### Frontend - (Hosting Firebase)
+| Nombre | Version | Documentación |
 | --- | --- | --- |
 | `Angular CLI` |  v16.1.4 | https://angular.io/cli |
 | `Firebase` | v10.5.0 | https://firebase.google.com/docs/web/setup?hl=es-419 |
@@ -21,25 +47,25 @@
 | `AOS animation` |  v2.3.4 | https://github.com/michalsnik/aos |
 
   
-### BACKEND - (Hosting Render)
+###### Backend - (Hosting Render)
 
-| Nombre | Version | documentación |
+| Nombre | Version | Documentación |
 | --- | --- | --- |
 | `Node Js` |  v18.16.1 | https://nodejs.org/en/about |
 | `Express` | v4.18.2 | https://expressjs.com/en/starter/installing.html |
 | `mysql2` |  v3.6.1 | https://www.npmjs.com/package/mysql2 |
 
-
-### BASE DE DATOS - (Hosting Clever-Cloud)
-| Nombre | Version | documentación |
+###### Base de datos - (Hosting Clever-Cloud)
+| Nombre | Version | Documentación |
 | --- | --- | --- |
 | `MySQL` |  v5.2.1 |  |
 | `Apache` | v2.4.56 | |
 
+<hr>
 
-## Responsive Página Web
+## 📌 🖥️ Responsive Página Web 📱
 
-<p><a href='https://weather-jbr.web.app/' target='_blank'>🚀 Web Pet Food Premium 👈<a/></p>
+<p align='center'>Demo: <a href='https://weather-jbr.web.app/' target='_blank'>🚀 Web Pet Food Premium 👈<a/></p>
 
 <p align="center">
   <img src='https://github.com/Jhossymarbalderrama/petfood/assets/52534649/97ad1c82-6584-4558-a7b9-c91d4fdc88c5'/>
