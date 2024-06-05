@@ -7,13 +7,13 @@
 
 .navbar {    
     min-width: 100%;
-    background-color: #0000008e;
+    background-color: var(--bg-dark-transp-200);
     padding: 1rem 1.5rem;
 }
 
 .navbar-solid{
     transition: 0.45s ease;
-    background-color: #000000e1 !important;
+    background-color: var(--bg-dark-transp-100) !important;
 }
 
 header {

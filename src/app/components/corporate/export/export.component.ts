@@ -9,6 +9,7 @@ import { ArticleService } from 'src/app/services/article.service';
 })
 export class ExportComponent implements OnInit {
 
+  imgCat:string = '../../../../assets/img/corporate/export/cat.webp';
   public articleFirst?: Article;
   public articles?: Article | any;
 

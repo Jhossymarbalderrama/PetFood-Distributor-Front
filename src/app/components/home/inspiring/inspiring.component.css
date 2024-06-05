@@ -1,73 +1,69 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-section{
+section {
     min-height: 70vh;
     background: linear-gradient(#000000b7, #000000b7),
-        url("../../../../assets/img/pets.jpg") center/cover no-repeat;
+        var(--img-standard) center/cover no-repeat;
+    background-attachment: fixed;
 }
 
-h1{
-    font-family: Cedarville Cursive;    
+h1 {
+    font-family: Cedarville Cursive;
     font-weight: 500;
-    color: white;
+    color: var(--color-txt-light);
     font-size: 3.5vw;
     letter-spacing: 2px;
 }
 
-p{
-    color: white;
+p {
+    color: var(--color-txt-dark-800);
     font-family: Poppins, sans-serif;
 }
 
-.box-content{
+.box-content {
     width: 100%;
     min-height: 70vh;
     padding: 5rem 0rem;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     text-align: center;
 }
 
-.content{
+.content {
     margin: 0rem 6rem;
 }
 
-.content > h1{
+.content>h1 {
     margin-bottom: 30px;
 }
 
-.content > p{    
+.content>p {
     padding: 0px;
-    margin: 1rem 0rem;    
+    margin: 1rem 0rem;
 }
 
-@media screen and (min-width: 1024px) {
-    
-}
+@media screen and (min-width: 1024px) {}
 
-@media screen and ( min-width: 768px) and (max-width: 1023px) {
-    
-}
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
 
 @media screen and (max-width: 767px) {
-    .content{
+    .content {
         margin: 0rem 1rem;
     }
-    
-    .content > p{    
+
+    .content>p {
         padding: 0px;
         margin: 1rem 0rem;
 
         font-size: 1rem;
     }
 
-    h1{
+    h1 {
         font-size: 8vw;
     }
 }

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./banner-footer.component.css']
 })
 export class BannerFooterComponent {
-
+  public imgLogoFt: string = '../../../../assets/img/logo-footer.webp';
 }

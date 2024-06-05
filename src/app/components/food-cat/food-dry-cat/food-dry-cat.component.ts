@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class FoodDryCatComponent {
 
+  data:any = [];
+
+  constructor(){
+    for (let i = 0; i < 18; i++) {
+      let food =  {
+        title: 'Lorem Ipsum Family',
+        description: 'Lorem Ipsum is simply dummy text',
+        img: `../../../../assets/img/foods/food_dry_cat/${i+1}.webp`
+      }
+
+      this.data.push(food);
+    }
+  }
+  
 }

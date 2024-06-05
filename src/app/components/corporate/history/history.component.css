@@ -3,7 +3,7 @@
     font-size: 18px;
     font-family: Poppins - 700;
     text-transform: uppercase;
-    color: #F57E25;    
+    color: var(--color-txt-default);    
 }
 
 .col-md-4 > img{
@@ -33,14 +33,14 @@
 .col-md-2{
     font-family: Poppins;
     font-size: 21px;
-    color: #F57E25;   
+    color: var(--color-txt-default);   
     font-weight: bold;
 }
 
 .col-md-10 > p{
     font-family: Poppins;
     font-size: 16px;
-    color: #555555;
+    color: var(--color-txt-dark-300);
 }
 
 

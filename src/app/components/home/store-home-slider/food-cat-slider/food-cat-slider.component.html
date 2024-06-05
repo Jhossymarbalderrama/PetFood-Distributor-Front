@@ -4,46 +4,12 @@
 
 <div class="navigation-wrapper">
   <div class="keen-slider keen-slider--vertical" #sliderRef>
-    <div class="keen-slider__slide slider-box" >
-      <p><img src="../../../../../assets/img/foods/food_wet_cat/1.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
+
+    <div *ngFor="let item of data" class="keen-slider__slide slider-box" >
+      <p><img [src]="item.img" /></p>
+      <p>{{item.description}}</p>
     </div>
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_wet_cat/2.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_wet_cat/3.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_wet_cat/4.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_wet_cat/5.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_wet_cat/6.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_wet_cat/7.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_wet_cat/8.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_wet_cat/9.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_wet_cat/10.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
+
   </div>
 
   <svg

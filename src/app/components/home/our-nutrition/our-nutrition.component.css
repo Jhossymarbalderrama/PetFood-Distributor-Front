@@ -15,7 +15,7 @@ header {
     height: 147px;
     width: 100%;
     text-align: center;
-    color: #5a5a5a;
+    color: var(--color-txt-dark-200);
     margin-bottom: -3rem;
 }
 
@@ -67,12 +67,12 @@ img:not(:hover){
 }
 
 .box-text>h4 {
-    color: #F57E25;
+    color: var(--color-txt-default);
     font-weight: bolder;
 }
 
 .box-text>p {
-    color: #5a5a5a;
+    color: var(--color-txt-dark-300);
     font-size: 16px;
     font-family: Poppins, sans-serif;
 }

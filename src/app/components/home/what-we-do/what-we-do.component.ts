@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./what-we-do.component.css']
 })
 export class WhatWeDoComponent {
-
+  imgHistories: string = '../../../../assets/img/histories.webp';
 }

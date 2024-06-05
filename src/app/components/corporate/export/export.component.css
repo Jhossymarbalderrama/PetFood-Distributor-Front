@@ -23,7 +23,7 @@
 
 
 p{
-    color: #424242;    
+    color: var(--color-txt-dark-300);    
 }
 
 .col-md-8{
@@ -31,7 +31,7 @@ p{
 }
 
 h6{
-    color: #F57E25;
+    color: var(--color-txt-default);
     font-weight: 600;
 }
 
@@ -41,17 +41,18 @@ h1{
 }
 
 button{
-    background-color: #F57E25;
+    background-color: var(--color-txt-default);
     border-radius: 5px;
     padding: 5px 25px;
-    border: 1px solid #424242;    
+    /* border: 1px solid #424242;     */
     cursor: pointer;
+    color: white;
 }
 
 button:hover{
     transition: 0.2s ease;
     background-color: #bb5609;
-    border: 1px solid #424242;
+    /* border: 1px solid #424242; */
     color: white;
 }
 
@@ -80,7 +81,7 @@ button:hover{
     }
     
     h6{
-        color: #F57E25;
+        color: var(--color-txt-default);
         font-weight: 600;
     }
     

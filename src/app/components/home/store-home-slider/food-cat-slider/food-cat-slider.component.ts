@@ -11,6 +11,7 @@ import KeenSlider, { KeenSliderInstance } from "keen-slider";
 export class FoodCatSliderComponent implements OnInit, AfterViewInit{
   @ViewChild("sliderRef", {read: ElementRef}) private sliderRef: ElementRef<HTMLElement> | any; 
 
+  data: any = [];
   slider: KeenSliderInstance | any;
   currentSlide: number = 1;
   dotHelper: Array<Number> | any = [];
@@ -20,7 +21,14 @@ export class FoodCatSliderComponent implements OnInit, AfterViewInit{
 
   viewSlider: boolean = false;
   constructor() {
-    
+    for (let i = 0; i < 10; i++) {
+        let item = {
+          img: `../../../../../assets/img/foods/food_wet_cat/${i+1}.webp`,
+          description:'Lorem Ipsum is simply dummy text'
+        }   
+        
+        this.data.push(item);
+    }
   }
   
   ngOnInit(){

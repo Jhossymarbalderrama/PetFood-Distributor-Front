@@ -14,11 +14,11 @@ section{
 }
 
 .banner{
-    background: linear-gradient(#000000ad, #0000007c), url("../../../../assets/img/corporate/banner/domestic-life-with-pet.jpg") center/cover no-repeat;
+    background: linear-gradient(#000000ad, #0000007c), var(--img-corporate-banner) center/cover no-repeat;
 }
 
 .banner-export{
-    background: linear-gradient(#000000ad, #0000007c), url("../../../../assets/img/corporate/export/banner_export.jfif") center/cover no-repeat;
+    background: linear-gradient(#000000ad, #0000007c), var(--img-corporate-export-banner) center/cover no-repeat;
     background-position: bottom;
 }
 
@@ -31,7 +31,7 @@ section{
 }
 
 h4{
-    color: #F57E25;
+    color: var(--color-txt-default);
     text-transform: capitalize;
     font-weight: bolder;
     font-size: 56px;
@@ -41,7 +41,7 @@ h4{
 
 
 h4 > span{
-    color: white;
+    color: var(--color-txt-light);
 }
 
 @media screen and (min-width: 1024px) {

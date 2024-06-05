@@ -9,10 +9,11 @@ section{
     min-height: 400px;
     /* background-image: url("../../../../assets/img/dog_funny.jpg"); */
     background: linear-gradient(#00000067, #00000083),
-        url("../../../../assets/img/dog_funny.jpg");
+        var(--img-hob);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: calc(100%) calc(35%); 
+    background-attachment: fixed;
 }
 
 .box-content{
@@ -33,13 +34,13 @@ section{
 
 h4, h2 , h3{
     font-weight: bolder;
-    color: white;
+    color: var(--color-txt-light);
     /* font-size: 32px; */
     font-size: 4vh;
 }
 
 h2, h3{
-    color: #F57E25;
+    color: var(--color-txt-default);
     /* font-size: 42px;     */
     font-size: 4.5vh;
 }

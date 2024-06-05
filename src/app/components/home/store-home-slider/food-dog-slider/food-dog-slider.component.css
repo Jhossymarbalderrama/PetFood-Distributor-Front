@@ -17,11 +17,11 @@
 }
 
 p {
-  color: #F57E25;
+  color: var(--color-txt-default);
 }
 
 p>span {
-  color: #6e6e6e;
+  color: var(--color-txt-dark-300);
 }
 
 .navigation-wrapper {

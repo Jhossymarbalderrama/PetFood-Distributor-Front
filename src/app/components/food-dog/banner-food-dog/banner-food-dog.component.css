@@ -14,7 +14,8 @@ section{
 }
 
 .banner{
-    background: linear-gradient(#000000ad, #0000007c), url("../../../../assets/img/foods/banner/dog-relaxing-on-bed.jpg") center/cover no-repeat;
+    background: linear-gradient(#000000ad, #0000007c),
+     var(--img-dog-banner) center/cover no-repeat;
 }
 
 h4{
@@ -27,7 +28,7 @@ h4{
     display: flex;
     justify-content: left;
     align-items: center;
-    color: white;    
+    color: var(--color-txt-light);    
 }
 
 span > p{
@@ -37,7 +38,7 @@ span > p{
 }
 
 span > h4{
-    color: #F57E25;    
+    color: var(--color-txt-default);    
     font-size: 56px;
     text-transform: capitalize;
     margin-bottom: 20px;
@@ -46,7 +47,7 @@ span > h4{
 
 
 h4 > span{
-    color: white;
+    color: var(--color-txt-light);
 }
 
 @media screen and (min-width: 1024px) {

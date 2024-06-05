@@ -6,8 +6,8 @@
 
 section {
     padding: 2rem 4rem;
-    background-color: #222222;
-    color: white;
+    background-color:  var(--color-txt-dark-75);
+    color: var(--color-txt-light);
     font-family: Poppins, sans-serif;
 }
 
@@ -22,7 +22,7 @@ section {
 
 
 .box>h4 {
-    color: #F88825;
+    color: var(--color-txt-default);
     font-weight: bold;
 }
 
@@ -36,18 +36,18 @@ li {
 }
 
 li>i {
-    color: #F88825;
+    color: var(--color-txt-default);
     padding-right: 5px;
 }
 
 li>a {
-    color: white;
+    color: var(--color-txt-light);
     cursor: pointer;
     text-decoration: none;
 }
 
 li>a:hover {
-    color: #F88825;
+    color: var(--color-txt-default);
 }
 
 

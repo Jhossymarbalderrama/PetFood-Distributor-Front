@@ -1,27 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
-/* @import url('https://fonts.googleapis.com/css2?family=Asap:wght@100&family=Bangers&family=Creepster&family=Poppins&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@100&family=Bangers&family=Cedarville+Cursive&family=Creepster&family=Poppins&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,400;0,500;0,600;1,400;1,500;1,600&family=Bangers&family=Creepster&family=Poppins&display=swap'); */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,400;0,500;0,600;1,400;1,500;1,600&family=Bangers&family=Cedarville+Cursive&family=Creepster&family=Gabarito:wght@400;500;600;700;800;900&family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* 
-light :root
-dark: media
-
 :root{
-    --text-color: #F57E25; 
+
+
+    /*//? Imagenes */
+    
+    /* Home */
+    --img-home: url('./assets/img/home.webp');
+    --img-hob: url('./assets/img/hob.webp');
+    --img-services: url('./assets/img/services.webp');
+    --img-histories: url('./assets/img/histories.webp');
+    --img-standard: url('./assets/img/standard.webp');
+    --img-logo: url('./assets/img/logo.webp');
+    --img-logo-footer: url('./assets/img/logo-footer.webp');
+    --img-logo-cat: url('./assets/img/logo-cat.webp');
+
+    /* Contact */
+    --img-banner-contact: url('./assets/img/contact/dog-cat.webp');
+
+    /* Corporate */
+    --img-corporate-banner: url('./assets/img/corporate/banner-corporate.webp');
+
+    --img-corporate-about: url('./assets/img/corporate/about/dog.webp');
+    --img-corporate-history: url('./assets/img/corporate/history/dog-cat.webp');
+
+    --img-corporate-export-banner: url('./assets/img/corporate/export/banner-export.webp');
+    --img-corporate-export: url('./assets/img/corporate/export/cat.webp');
+
+    --img-corporate-aboutAll: url('./assets/img/corporate/About alltech/city.webp');
+
+    --img-corporate-dealership-1: url('./assets/img/corporate/dealership/cat-table.webp');
+    --img-corporate-dealership-2: url('./assets/img/corporate/dealership/dog-inside.webp');
+    --img-corporate-dealership-3: url('./assets/img/corporate/dealership/dog-noise.webp');
+    --img-corporate-dealership-4: url('./assets/img/corporate/dealership/dog-small.webp');
+    --img-corporate-dealership-5: url('./assets/img/corporate/dealership/three-cats.webp');
+
+
+    /* Img Cat Food*/
+    --img-cat-banner: url('./assets/img/foods/banner/cats.webp');
+    /* Img Dog Food*/
+    --img-dog-banner: url('./assets/img/foods/banner/dogs.webp');
+
+
+    /*//? Text Color  */
+    --color-txt-light: white;
+    --color-txt-dark: black;
+    --color-txt-light-fv: white;
+    --color-txt-dark-fv: black;
+    
+    --color-txt-dark-50: #1a1a1a;
+    --color-txt-dark-75: #222222;
+    --color-txt-dark-100: #353535;
+    --color-txt-dark-200: #4e4e4e;
+    --color-txt-dark-300: #5f5f5f;
+    --color-txt-dark-400: #707070;
+    --color-txt-dark-500: #808080;
+    --color-txt-dark-600: #919191;
+    --color-txt-dark-700: #a0a0a0;
+    --color-txt-dark-800: #b8b8b8;
+    --color-txt-dark-900: #c4c4c4;
+
+    --color-txt-hover: #f57f259c;
+    --color-txt-default: #F57E25;
+
+    /*//? Background Color  */
+    --bg-color-50: #f6f6f6;
+    --bg-color-100: #e7e7e7;
+    --bg-color-200: #d1d1d1;
+    --bg-color-300: #b0b0b0;
+    --bg-color-400: #888888;
+    --bg-color-500: #6d6d6d;
+    --bg-color-600: #5d5d5d;
+    --bg-color-700: #4f4f4f;
+    --bg-color-800: #454545;
+    --bg-color-900: #0e0e0e;
+    --bg-color-950: #000000;
+
+    --bg-dark-transp-100: #000000e1;
+    --bg-dark-transp-200: #0000008e; 
+    --bg-light-transp-100: #e7e7e7ef;    
 }
 
-@media (prefers-color-scheme: dark){
-    :root{
-        --text-color: red;
-    }
-} */
-
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
 }

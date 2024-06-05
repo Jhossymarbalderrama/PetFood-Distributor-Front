@@ -9,25 +9,10 @@ section{
 }
 
 .box-img > img{
-    /* height: 413px;
-    width: 372px; */
     height: 100%;
     width: 50%;
     cursor: pointer;
 }
-
-
-/* .imgBlur{           
-    height: 60px;
-    width: 23.5%;
-    filter: blur(7px);
-    -webkit-filter: blur(7px);     
-    position: absolute;
-    z-index: 11;
-    left: 38%;
-    background-color: #ffffff;
-    top: 16%;    
-} */
 
 img:hover{
     transition: 0.5s ease;

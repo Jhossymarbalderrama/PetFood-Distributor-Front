@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./our-nutrition.component.css']
 })
 export class OurNutritionComponent {
-
+  imgServices: string = '../../../../assets/img/services.webp';
 }

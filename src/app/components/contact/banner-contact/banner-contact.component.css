@@ -15,7 +15,9 @@ section{
 }
 
 .banner{
-    background: linear-gradient(#000000ad, #0000007c), url("../../../../assets/img/contact/banner/banner_dogs_cat_gray.jpg") center/cover no-repeat;
+    background: linear-gradient(#000000ad, #0000007c), 
+    var(--img-banner-contact)
+    center/cover no-repeat;
 }
 
 

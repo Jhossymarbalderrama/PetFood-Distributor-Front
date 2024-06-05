@@ -3,7 +3,7 @@ section{
 }
 
 h4{
-    color: #F57E25;
+    color: var(--color-txt-default);
     font-size: 18px;
 }
 
@@ -14,7 +14,7 @@ h1{
 }
 
 .col-md-7{
-    color: #555555;
+    color: var(--color-txt-dark-300);
     font-size: 16px;
 }
 
@@ -61,7 +61,7 @@ input{
 }
 
 .btn{
-    background-color: #F57E25;
+    background-color: var(--color-txt-default);
     font-family: Poppins;
     text-transform: uppercase;
     font-weight: bold;
@@ -84,35 +84,35 @@ input{
 
 
 .number-slide1 {
-  background-image: url("../../../../assets/img/corporate/dealership/biel-morro-bsSIk3LV_NE-unsplash.jpg");
+  background-image: var(--img-corporate-dealership-1);
   background-repeat: no-repeat;
   background-size: cover;  
   background-position: center;
 }
 
 .number-slide2 {
-    background-image: url("../../../../assets/img/corporate/dealership/black-dog-1851106_1280.jpg");
+    background-image: var(--img-corporate-dealership-2);
     background-repeat: no-repeat;
     background-size: cover;  
     background-position: center;
 }
 
 .number-slide3 {
-    background-image: url("../../../../assets/img/corporate/dealership/dachshund-1519374_1280.jpg");
+    background-image: var(--img-corporate-dealership-4);
     background-repeat: no-repeat;
     background-size: cover;  
     background-position: center;
 }
 
 .number-slide4 {
-    background-image: url("../../../../assets/img/corporate/dealership/dog-4398803_1280.jpg");
+    background-image: var(--img-corporate-dealership-3);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
 }
 
 .number-slide5 {
-    background-image: url("../../../../assets/img/corporate/dealership/kittens-3535404_1280.jpg");
+    background-image: var(--img-corporate-dealership-5);
     background-repeat: no-repeat;
     background-size: cover;  
     background-position: center;

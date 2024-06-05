@@ -8,6 +8,8 @@ import { ArticleService } from 'src/app/services/article.service';
   styleUrls: ['./about-alltech.component.css']
 })
 export class AboutAlltechComponent implements OnInit {
+
+  imgPort:string = '../../../../assets/img/corporate/About alltech/city.webp';
   public articleFirst?: Article;
   public articles?: Article | any;
 

@@ -4,34 +4,10 @@
 
 <div class="navigation-wrapper">
   <div class="keen-slider keen-slider--vertical" #sliderRef>    
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_dry_dog/1.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_dry_dog/2.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_dry_dog/3.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_dry_dog/4.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_dry_dog/5.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_dry_dog/6.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
-    <div class="keen-slider__slide slider-box">
-      <p><img src="../../../../../assets/img/foods/food_dry_dog/7.png" /></p>
-      <p>Lorem Ipsum is simply dummy text</p>
-    </div>
+    <div *ngFor="let item of data" class="keen-slider__slide slider-box" >
+      <p><img [src]="item.img" /></p>
+      <p>{{item.description}}</p>
+    </div>   
   </div>
   <svg
     [ngClass]="

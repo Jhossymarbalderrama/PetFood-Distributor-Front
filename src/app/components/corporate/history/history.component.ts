@@ -9,6 +9,7 @@ import { ArticleService } from 'src/app/services/article.service';
 })
 export class HistoryComponent implements OnInit {
 
+  imgDogCat:string = '../../../../assets/img/corporate/history/dog-cat.webp';
   public articles?: Article[] | undefined;
 
   constructor(

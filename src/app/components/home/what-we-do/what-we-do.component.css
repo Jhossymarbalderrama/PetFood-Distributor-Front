@@ -9,7 +9,7 @@ section{
     padding: 2rem 0rem;
     min-height: auto;
     min-width: 100%;
-    background-color: #333333;
+    background-color: var(--bg-color-50);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@ img:not(:hover){
 
 
 .section-r{
-    color: #AAAAAA;    
+    color: var(--color-txt-dark-200);    
     text-align: center;   
 }
 
@@ -61,15 +61,15 @@ img:not(:hover){
     text-align: center;
     font-weight: bold;
     margin: 1.5rem 0rem;
-    color: whitesmoke;
+    color: var(--color-txt-dark-400);  
 }
 
 .header-section > h1{
-    color: #F57E25;          
+    color: var(--color-txt-default);          
 }
 
 .box-text> h4{
-    color: #F57E25;
+    color: var(--color-txt-default);
     font-weight: bolder;
 }
 

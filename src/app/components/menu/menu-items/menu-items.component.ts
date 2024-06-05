@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class MenuItemsComponent {
  isMenuOpen: boolean = false;
+ 
+  public imgLogo: string = '../../../../assets/img/logo.webp';
 
  toggleMenu(): void{
     this.isMenuOpen = !this.isMenuOpen; 
@@ -16,6 +18,8 @@ export class MenuItemsComponent {
  constructor(private Router: Router){
 
  }
+
+ 
 //  nav-toggle > burger
 // links  > menu
 // nav-item > menu-item
