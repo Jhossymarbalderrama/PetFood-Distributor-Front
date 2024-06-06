@@ -1,49 +1,34 @@
 <div class="box-title">
-  <p>Lorem Ipsum <span>Gatos</span> Alimentos</p>
+  <p>Alimentos <span>Humedos</span> para Gatos</p>
 </div>
 
 <div class="navigation-wrapper">
   <div class="keen-slider keen-slider--vertical" #sliderRef>
 
-    <div *ngFor="let item of data" class="keen-slider__slide slider-box" >
+    <div *ngFor="let item of data" class="keen-slider__slide slider-box">
       <p><img [src]="item.img" /></p>
       <p>{{item.description}}</p>
     </div>
 
   </div>
 
-  <svg
-    [ngClass]="
+  <svg [ngClass]="
       'arrow arrow--left ' + (currentSlide === 0 ? 'arrow--disabled' : '')
-    "
-    (click)="slider.prev()"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
-    />
+    " (click)="slider.prev()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
   </svg>
 
-  <svg    
-    [ngClass]="
+  <svg [ngClass]="
       'arrow arrow--right ' +
       (slider?.track?.details.slides.length - 1 === currentSlide
         ? 'arrow--disabled'
         : '')
-    "
-    (click)="slider.next()"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
+    " (click)="slider.next()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
   </svg>
 </div>
 
 <div class="dots">
-  <button
-    (click)="slider.moveToIdx(i)"
-    *ngFor="let slide of dotHelper; let i = index"
-    [class]="'dot ' + (i === currentSlide ? 'active' : '')"
-  ></button>
+  <button (click)="slider.moveToIdx(i)" *ngFor="let slide of dotHelper; let i = index"
+    [class]="'dot ' + (i === currentSlide ? 'active' : '')"></button>
 </div>

@@ -24,7 +24,7 @@ export class FoodDogSliderComponent {
     for (let i = 0; i < 11; i++) {
       let item = {
         img: `../../../../../assets/img/foods/food_dry_dog/${i+1}.webp`,
-        description:'Lorem Ipsum is simply dummy text'
+        description:'Alimento para Perros de Alta Calidad'
       }   
       
       this.data.push(item);

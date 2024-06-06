@@ -16,7 +16,7 @@ section{
 }
 
 .container{
-    padding: 1rem 10%;
+    padding: 0rem 5rem;
 }
 
 
@@ -64,7 +64,7 @@ img:not(:hover){
     color: var(--color-txt-dark-400);  
 }
 
-.header-section > h1{
+.header-section > h1, h4{
     color: var(--color-txt-default);          
 }
 
@@ -93,6 +93,10 @@ img:not(:hover){
 }
 
 @media screen and (max-width: 767px) {
+
+    .container{
+        padding: 0rem 1rem;
+    }
 
     .container > .row > .col-md-6 {
         width: 100%;

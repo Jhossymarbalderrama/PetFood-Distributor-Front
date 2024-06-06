@@ -18,9 +18,17 @@ section{
      var(--img-dog-banner) center/cover no-repeat;
 }
 
-h4{
+h4 > span{
+    color: var(--color-txt-light);
+    font-size: 2rem;
+}
+
+span > p{
+    font-size: 16px;   
+    font-weight: normal;  
     text-shadow: 2px 2px 2px #272727;
 }
+
 
 .box-content{
     height: 400px;
@@ -62,11 +70,15 @@ h4 > span{
     }
 
     span > p{
-        font-size: 2vh; 
+        font-size: 1.5vh; 
     }
 
-    span > h4{ 
-        font-size: 4.5vh;
+    h4{
+        font-size: 2.5rem; 
+    }  
+
+    h4 span{
+        font-size: 1.5rem;
     }
 }
 
@@ -81,8 +93,12 @@ h4 > span{
         font-size: 1.5vh; 
     }
 
-    span > h4{ 
-        font-size: 2.5vh;
+    h4{
+        font-size: 2.5rem;
+    }   
+    
+    h4 span{
+        font-size: 2rem;
     }
     
 }

@@ -5,10 +5,9 @@
 }
 
 section {
-    padding: 2rem 0rem;
+    padding: 3rem 10rem;
     min-height: auto;
     min-width: 100%;
-    /* background-color: #333333;     */
 }
 
 header {
@@ -32,13 +31,7 @@ header>h1 {
 
 
 .box-content {
-    /* background-color: #F57E25; */
     height: auto;
-    padding: 0vh 12vw;
-}
-
-.row {
-    margin: 0rem 2rem;
 }
 
 .col-md-4 {
@@ -48,7 +41,6 @@ header>h1 {
 .col-md-4 > img {
     margin-top: 2.5rem;
     width: 100%;
-    /* height: 447px;    */
 }
 
 img:hover{
@@ -63,7 +55,7 @@ img:not(:hover){
 
 
 .box-text {
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
 }
 
 .box-text>h4 {
@@ -84,7 +76,8 @@ img:not(:hover){
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     section {
-        padding: 0.5rem;
+        /* padding: 0.5rem; */
+        padding: 4rem 4rem;
     }
 
     .box-content {
@@ -109,11 +102,12 @@ img:not(:hover){
     header{
         margin-bottom: 1.5rem;
     }
+
 }
 
 @media screen and (max-width: 767px) {
     section {
-        padding: 0.5rem;
+        padding: 1rem 2rem;
     }
 
     .box-content {
@@ -136,7 +130,7 @@ img:not(:hover){
     }
 
     header{
-        margin-bottom: 1.5rem;
+        margin-bottom: 4rem;
     }
     
 }

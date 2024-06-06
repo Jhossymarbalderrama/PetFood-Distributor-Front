@@ -1,113 +1,44 @@
 <section>
   <header data-aos="fade-up" data-aos-duration="800">
-    <h1><a style="color: var(--color-txt-default); text-decoration: none">Lorem</a> Ipsum</h1>
-    <p>
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum.
-    </p>
+    <h1 style="color: var(--color-txt-default);">{{data.title}}</h1>
+    <p>{{data.description}}</p>
   </header>
 
   <div class="box-content">
     <div class="row">
       <div class="col-md-4">
-        <div class="box-text" data-aos="fade-up" data-aos-duration="800">
+        <div *ngFor="let item of listFirstServices" class="box-text" data-aos="fade-up" data-aos-duration="800">
           <h4>
-            <i class="fa-solid fa-vials"></i>
-            Simply Lorem Ipsum
+            <i [ngClass]="item.icon"></i>
+            {{item.title}}
           </h4>
           <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="box-text" data-aos="fade-up" data-aos-duration="800">
-          <h4>
-            <i class="fa-solid fa-leaf"></i>
-            Simply Lorem Ipsum
-          </h4>
-          <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="box-text" data-aos="fade-up" data-aos-duration="800">
-          <h4>
-            <i class="fa-solid fa-bone"></i>
-            Simply Lorem Ipsum
-          </h4>
-          <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="box-text" data-aos="fade-up" data-aos-duration="800">
-          <h4>
-            <i class="fa-solid fa-pills"></i>
-            Simply Lorem Ipsum
-          </h4>
-          <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
+            {{item.description}}
           </p>
         </div>
       </div>
-      <div
-        class="col-md-4"
-        style="display: flexbox; justify-content: center; align-items: end"
-      >
-      
-      <img [src]="imgServices" alt="" />
-        
-        <div class="box-text" data-aos="fade-up" data-aos-duration="800">
+
+      <div class="col-md-4" style="display: flexbox; justify-content: center; align-items: end">
+        <img [src]="imgServices" alt="" />
+        <div *ngFor="let item of listSecondServices" class="box-text" data-aos="fade-up" data-aos-duration="800">
           <h4>
-            <i class="fa-solid fa-flask"></i>
-            Simply Lorem Ipsum
+            <i [ngClass]="item.icon"></i>
+            {{item.title}}
           </h4>
           <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
+            {{item.description}}
           </p>
         </div>
       </div>
+
       <div class="col-md-4">
-        <div class="box-text" data-aos="fade-up" data-aos-duration="800">
+        <div *ngFor="let item of listTertServices" class="box-text" data-aos="fade-up" data-aos-duration="800">
           <h4>
-            <i class="fa-solid fa-award"></i>
-            Simply Lorem Ipsum
+            <i [ngClass]="item.icon"></i>
+            {{item.title}}
           </h4>
           <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="box-text" data-aos="fade-up" data-aos-duration="800">
-          <h4>
-            <i class="fa-solid fa-cat"></i>
-            Simply Lorem Ipsum
-          </h4>
-          <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="box-text" data-aos="fade-up" data-aos-duration="800">
-          <h4>
-            <i class="fa-solid fa-award"></i>
-            Simply Lorem Ipsum
-          </h4>
-          <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="box-text" data-aos="fade-up" data-aos-duration="800">
-          <h4>
-            <i class="fa-solid fa-heart-pulse"></i>
-            Simply Lorem Ipsum
-          </h4>
-          <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
+            {{item.description}}
           </p>
         </div>
       </div>

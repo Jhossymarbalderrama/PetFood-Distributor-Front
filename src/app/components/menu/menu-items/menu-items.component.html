@@ -11,7 +11,7 @@
     <!-- <ul class="links" [class.is-open]="isMenuOpen"> -->
       <ul class="links" [ngClass]="isMenuOpen ? 'is-open' : ''">
       <li class="nav-item" (click)="toggleMenu()">
-        <a routerLink="">home</a>
+        <a routerLink="">Home</a>
       </li>
       <li class="nav-item dropdown">
         <a
@@ -19,26 +19,26 @@
           data-bs-toggle="dropdown"
           class="nav-link dropdown-toggle"
           data-bs-display="static"
-          >corporate</a
+          >Empresa</a
         >
         <ul class="dropdown-menu">
-          <li class="dropdown-item" routerLink="corporate/about" (click)="toggleMenu()">
-            <a>about</a>
+          <li class="dropdown-item" routerLink="corporate/nosotros" (click)="toggleMenu()">
+            <a>Nosotros</a>
           </li>
-          <li class="dropdown-item" routerLink="corporate/history" (click)="toggleMenu()">
-            <a>history</a>
+          <li class="dropdown-item" routerLink="corporate/historia" (click)="toggleMenu()">
+            <a>Historia</a>
           </li>
-          <li class="dropdown-item" routerLink="corporate/catalog" (click)="toggleMenu()">
-            <a>catalog</a>
+          <li class="dropdown-item" routerLink="corporate/catalogo" (click)="toggleMenu()">
+            <a>Catalogo</a>
           </li>
-          <li class="dropdown-item" routerLink="corporate/export" (click)="toggleMenu()">
-            <a>export</a>
+          <li class="dropdown-item" routerLink="corporate/exportacion" (click)="toggleMenu()">
+            <a>Exportación</a>
           </li>
-          <li class="dropdown-item" routerLink="corporate/about-all" (click)="toggleMenu()">
-            <a>about all</a>
+          <li class="dropdown-item" routerLink="corporate/empresa" (click)="toggleMenu()">
+            <a>Sobre Nosotros</a>
           </li>
-          <li class="dropdown-item" routerLink="corporate/dealership" (click)="toggleMenu()">
-            <a>dealership</a>
+          <li class="dropdown-item" routerLink="corporate/contratanos" (click)="toggleMenu()">
+            <a>Contratanos</a>
           </li>
         </ul>
       </li>
@@ -48,14 +48,14 @@
           data-bs-toggle="dropdown"
           class="nav-link dropdown-toggle"
           data-bs-display="static"
-          >cat food</a
+          >Felinos</a
         >
         <ul class="dropdown-menu">
           <li class="dropdown-item" routerLink="foods/dry-cat" (click)="toggleMenu()">
-            <a>dry foods</a>
+            <a>Alimentos Secos</a>
           </li>
           <li class="dropdown-item" routerLink="foods/wet-cat" (click)="toggleMenu()">
-            <a>wet foods</a>
+            <a>Alimentos Humedos</a>
           </li>
         </ul>
       </li>
@@ -66,19 +66,19 @@
           data-bs-toggle="dropdown"
           class="nav-link dropdown-toggle"
           data-bs-display="static"
-          >dog food</a
+          >Caninos</a
         >
         <ul class="dropdown-menu">
           <li class="dropdown-item" routerLink="foods/dry-dog" (click)="toggleMenu()">
-            <a>dry foods</a>
+            <a>Alimentos Secos</a>
           </li>
           <li class="dropdown-item" routerLink="foods/wet-dog" (click)="toggleMenu()">
-            <a>wet foods</a>
+            <a>Alimentos Humedos</a>
           </li>
         </ul>
       </li>
       <li class="nav-item" (click)="toggleMenu()">
-        <a routerLink="contact">contact</a>
+        <a routerLink="contact">Contacto</a>
       </li>
     </ul>
   </div>

@@ -21,12 +21,21 @@ export class HistoryComponent implements OnInit {
       let id_section_About: number = 3;
       this.ArticleService.getContactArticleXSection(id_section_About).subscribe((articleData: any) => {
         this.articles = articleData;
-        this.ArticleService.historyArticles = this.articles;
+        this.ArticleService.historyArticles = this.articles;          
+        this.sortArticlesByYearDesc();    
       });
     }
   }
 
   ngOnInit(): void {
 
+  }
+
+  sortArticlesByYearDesc() {
+    this.articles?.sort((a, b) => {
+      let yearA = parseInt(a.title);
+      let yearB = parseInt(b.title);
+      return yearB - yearA;
+    });
   }
 }

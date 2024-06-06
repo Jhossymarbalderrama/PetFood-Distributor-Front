@@ -24,7 +24,7 @@ export class FoodCatSliderComponent implements OnInit, AfterViewInit{
     for (let i = 0; i < 10; i++) {
         let item = {
           img: `../../../../../assets/img/foods/food_wet_cat/${i+1}.webp`,
-          description:'Lorem Ipsum is simply dummy text'
+          description:'Nutrición Premium para tu Felino'
         }   
         
         this.data.push(item);

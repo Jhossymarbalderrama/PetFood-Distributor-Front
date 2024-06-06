@@ -8,11 +8,18 @@ import { Component } from '@angular/core';
 export class FoodWetDogComponent {
   data:any = [];
 
+  private titles = ['Salud y Vitalidad', 'Sabor Inigualable', 'Nutrición Balanceada'];
+  private descriptions = ['Alimento seco para perros', 'Con ingredientes naturales', 'Rico en proteínas y vitaminas'];
+
+
   constructor(){
     for (let i = 0; i < 4; i++) {
+      let randomTitleIndex = Math.floor(Math.random() * this.titles.length);
+      let randomDescriptionIndex = Math.floor(Math.random() * this.descriptions.length);
+
       let food =  {
-        title: 'Lorem Ipsum Family',
-        description: 'Lorem Ipsum is simply dummy text',
+        title: this.titles[randomTitleIndex],
+        description: this.descriptions[randomDescriptionIndex],
         img: `../../../../assets/img/foods/food_wet_dog/${i+1}.webp`
       }
 

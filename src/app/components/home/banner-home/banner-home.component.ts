@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./banner-home.component.css']
 })
 export class BannerHomeComponent {
-  public imgLogo: string = '../../../../assets/img/logo.webp';
-  public imgLogoCat: string = '../../../../assets/img/logo-cat.webp';
+  imgLogo: string = '../../../../assets/img/logo.webp';
+  imgLogoCat: string = '../../../../assets/img/logo-cat.webp';
+  title: string = 'Pet Food Premium';
 }

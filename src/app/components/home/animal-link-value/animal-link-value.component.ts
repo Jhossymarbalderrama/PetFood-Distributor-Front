@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./animal-link-value.component.css']
 })
 export class AnimalLinkValueComponent {
-  // path_banner_bg :string = "../../../../assets/img/section_bg.png";
+  
+  data: any = {
+    p1: 'Pasión infinita',
+    p2: 'Compromiso con calidad excepcional',
+    p3: 'Integridad, ética, transparencia',
+    p4: 'Cuidado amoroso, productos confiables, resultados duraderos'
+  }
 }

@@ -5,53 +5,19 @@
     </div>
     <div class="col-12 col-sm-6 col-md-6 section-r"  data-aos="fade-up" data-aos-duration="800">      
         <div class="header-section">
-          <h1>The standard Lorem Ipsum</h1>
-          <h3>passage used</h3>
-          <h1>since the 1500s</h1>
+          <h1>{{data.title}}</h1>
+          <h3>{{data.subtitle}}</h3>
+          <h4>{{data.subtitleDes}}</h4>
         </div>
         <p class="text text-title">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat."
+          {{data.description}}
         </p>
         <div class="row">
-          <div class="col-6 col-sm-6 col-md-6">
-            <div class="box-text">
-              <h4 class="title text" style="font-size: 21px">Lorem Ipsum</h4>
+          <div *ngFor="let item of data.categories" class="col-6 col-sm-6 col-md-6">
+            <div class="box-text py-2 px-1">
+              <h4 class="title text" style="font-size: 21px">{{item.title}}</h4>
               <p class="text" style="font-size: 16px">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua"
-              </p>
-            </div>
-            <div class="box-text">
-              <h4 class="title text" style="font-size: 21px">Lorem Ipsum</h4>
-              <p class="text" style="font-size: 16px">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua"
-              </p>
-            </div>
-            <div class="box-text">
-              <h4 class="title text" style="font-size: 21px">Lorem Ipsum</h4>
-              <p class="text" style="font-size: 16px">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua"
-              </p>
-            </div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-6">
-            <div class="box-text">
-              <h4 class="title text" style="font-size: 21px">Lorem Ipsum</h4>
-              <p class="text" style="font-size: 16px">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua"
-              </p>
-            </div>
-            <div class="box-text">
-              <h4 class="title text" style="font-size: 21px">Lorem Ipsum</h4>
-              <p class="text" style="font-size: 16px">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua"
+                {{item.description}}
               </p>
             </div>
           </div>
