@@ -7,18 +7,41 @@
         </div>
         <div class="col-md-6">
             <div data-aos="fade-up" data-aos-duration="800">
-                <h4>{{article?.subtitle}}</h4>
-                
-                <h1>{{article?.title}}</h1>
-                
-                <p>{{article?.description}}</p>
-    
+                <h4 *ngIf="!isLoading; else subtitleSkeleton">{{ article?.subtitle }}</h4>
+                <ng-template #subtitleSkeleton>
+                  <div class="skeleton" style="height: 1.5em; width: 50%;"></div>
+                </ng-template>
+              
+                <h1 *ngIf="!isLoading; else titleSkeleton">{{ article?.title }}</h1>
+                <ng-template #titleSkeleton>
+                  <div class="skeleton" style="height: 2em; width: 80%;"></div>
+                </ng-template>
+              
+                <p *ngIf="!isLoading; else descriptionSkeleton">{{ article?.description }}</p>
+                <ng-template #descriptionSkeleton>
+                  <div class="skeleton" style="height: 1em; width: 100%;"></div>
+                  <div class="skeleton" style="height: 1em; width: 100%;"></div>
+                  <div class="skeleton" style="height: 1em; width: 100%;"></div>
+                </ng-template>
+              
                 <div class="contacts" style="padding-left: 10px;">
-                    <p> <i class="fa-solid fa-map-location-dot"></i> {{contact?.address}}</p>
-                    <p> <i class="fa-solid fa-square-phone"></i> {{contact?.smartphone}}</p>                
-                    <p> <i class="fa-solid fa-envelope"></i> {{contact?.email}}</p>
+                  <p *ngIf="!isLoading; else addressSkeleton"><i class="fa-solid fa-map-location-dot"></i> {{ contact?.address }}</p>
+                  <ng-template #addressSkeleton>
+                    <div class="skeleton" style="height: 1em; width: 60%;"></div>
+                  </ng-template>
+              
+                  <p *ngIf="!isLoading; else phoneSkeleton"><i class="fa-solid fa-square-phone"></i> {{ contact?.smartphone }}</p>
+                  <ng-template #phoneSkeleton>
+                    <div class="skeleton" style="height: 1em; width: 50%;"></div>
+                  </ng-template>
+              
+                  <p *ngIf="!isLoading; else emailSkeleton"><i class="fa-solid fa-envelope"></i> {{ contact?.email }}</p>
+                  <ng-template #emailSkeleton>
+                    <div class="skeleton" style="height: 1em; width: 70%;"></div>
+                  </ng-template>
                 </div>
-            </div>
+              </div>
+              
 
             <form style="background-color: #d6d6d6; padding: 1.5rem 2rem; border-radius: 5px;">
                 <div class="mb-2">

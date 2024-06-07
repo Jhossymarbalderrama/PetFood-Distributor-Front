@@ -3,25 +3,53 @@
 <section class="container my-5">
   <div class="row">
     <div class="col-md-4">
-      <h6>Nuestros años de</h6>
-      <h1>Historia</h1>
+      <h6 *ngIf="!isLoading; else titleSkeleton">Nuestros años de</h6>
+      <ng-template #titleSkeleton>
+        <div class="skeleton" style="height: 1em; width: 50%;"></div>
+      </ng-template>
+      <h1 *ngIf="!isLoading; else subtitleSkeleton">Historia</h1>
+      <ng-template #subtitleSkeleton>
+        <div class="skeleton" style="height: 2em; width: 80%;"></div>
+      </ng-template>
 
-      <img [src]="imgDogCat" />
+      <img *ngIf="!isLoading; else imgSkeleton" [src]="imgDogCat" />
+      <ng-template #imgSkeleton>
+        <div class="skeleton" style="height: 200px; width: 100%;"></div>
+      </ng-template>
     </div>
     <div class="col-md-8">
-      <div *ngFor="let article of articles">
-        <div class="row" data-aos="fade-up" data-aos-duration="800">
-          <div class="col-md-2">{{article?.title}}</div>
-          <div class="col-md-10">
-            <h4>{{article.subtitle}}</h4>
-            <p>
-              {{article?.description}}
-            </p>
+      <div *ngIf="!isLoading; else articlesSkeleton">
+        <div *ngFor="let article of articles">
+          <div class="row" data-aos="fade-up" data-aos-duration="800">
+            <div class="col-md-2">{{article?.title}}</div>
+            <div class="col-md-10">
+              <h4>{{article?.subtitle}}</h4>
+              <p>{{article?.description}}</p>
+            </div>
           </div>
+          <hr />
         </div>
-        <hr />
-      </div>    
-      
+      </div>
+      <ng-template #articlesSkeleton>
+        <div *ngFor="let _ of [1, 2, 3]">
+          <div class="row" data-aos="fade-up" data-aos-duration="800">
+            <div class="col-md-2">
+              <div class="skeleton" style="height: 1.5em; width: 100%;"></div>
+            </div>
+            <div class="col-md-10">
+              <h4>
+                <div class="skeleton" style="height: 1.5em; width: 50%;"></div>
+              </h4>
+
+              <div class="skeleton" style="height: 1em; width: 100%;"></div>
+              <div class="skeleton" style="height: 1em; width: 100%;"></div>
+              <div class="skeleton" style="height: 1em; width: 100%;"></div>
+
+            </div>
+          </div>
+          <hr />
+        </div>
+      </ng-template>
     </div>
   </div>
 </section>

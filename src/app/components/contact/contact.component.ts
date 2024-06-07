@@ -12,34 +12,40 @@ import { ContactService } from 'src/app/services/contact.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit{
-
   public contact?: Contact;
   public article?: Article;
+  public isLoading: boolean = true;
 
   constructor(
-    private AuthService:AuthService,
+    private AuthService: AuthService,
     private ContactService: ContactService
-  ){
-    if(this.ContactService.userDataContact){
+  ) {
+    if (this.ContactService.userDataContact) {
       this.contact = this.ContactService.userDataContact;
-    }else{
-      this.ContactService.getContact().subscribe(contactData =>{
-        this.contact = contactData;    
-        this.ContactService.userDataContact = this.contact; 
+    } else {
+      this.ContactService.getContact().subscribe(contactData => {
+        this.contact = contactData;
+        this.ContactService.userDataContact = this.contact;
+        this.checkLoadingStatus();
       });
     }
 
-    if(this.ContactService.articleSectionContact){
+    if (this.ContactService.articleSectionContact) {
       this.article = this.ContactService.articleSectionContact;
-    }else{
-      this.ContactService.getContactArticleXSection().subscribe((articlesData: any) =>{
+    } else {
+      this.ContactService.getContactArticleXSection().subscribe((articlesData: any) => {
         this.article = articlesData[0];
         this.ContactService.articleSectionContact = this.article;
-      })
+        this.checkLoadingStatus();
+      });
     }
   }
 
-  ngOnInit(): void {    
-  }
+  ngOnInit(): void {}
 
+  private checkLoadingStatus() {
+    if (this.contact && this.article) {
+      this.isLoading = false; 
+    }
+  }
 }

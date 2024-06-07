@@ -11,26 +11,26 @@ export class AboutComponent implements OnInit{
   
   imgDog: string = '../../../../assets/img/corporate/about/dog.webp';
   public articleFirst?: Article;
-  public articles?: Article[] | undefined;
+  public articles?: Article[];
+  public isLoading: boolean = true;
 
-  constructor(
-    private ArticleService: ArticleService
-  ){
-   if(this.ArticleService.aboutArticles){
-    this.articleFirst = this.ArticleService.aboutFirstElement;
-    this.articles = this.ArticleService.aboutArticles;
-   }else{
-    let id_section_About: number = 2;
-    this.ArticleService.getContactArticleXSection(id_section_About).subscribe((articleData: any) =>{           
-      this.articleFirst = articleData.shift();
-      this.articles = articleData;    
-      this.ArticleService.aboutFirstElement = this.articleFirst;
-      this.ArticleService.aboutArticles = this.articles;  
-    });
-   }
+  constructor(private ArticleService: ArticleService) {}
+
+  ngOnInit() {
+    if (this.ArticleService.aboutArticles) {
+      this.articleFirst = this.ArticleService.aboutFirstElement;
+      this.articles = this.ArticleService.aboutArticles;
+      this.isLoading = false;
+    } else {
+      let id_section_About: number = 2;
+      this.ArticleService.getContactArticleXSection(id_section_About).subscribe((articleData: any) => {
+        this.articleFirst = articleData.shift();
+        this.articles = articleData;
+        this.ArticleService.aboutFirstElement = this.articleFirst;
+        this.ArticleService.aboutArticles = this.articles;
+        this.isLoading = false;
+      });
+    }
   }
 
-  ngOnInit(): void {
-    
-  }
 }

@@ -51,9 +51,13 @@ h4{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-
+    .col-md-8{
+        padding: 1rem 2rem;
+    }
 }
 
 @media screen and (max-width: 767px) {
-
+    .col-md-8{
+        padding: 1rem 1.5rem;
+    }
 }

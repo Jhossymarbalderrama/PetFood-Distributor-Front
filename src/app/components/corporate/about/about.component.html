@@ -7,29 +7,57 @@
       style="overflow: hidden; display: flex; justify-content: center"
     >
       <img
+        *ngIf="!isLoading; else imgSkeleton"
         [src]="imgDog"
         height="660px"
         alt=""
       />
+      <ng-template #imgSkeleton>
+        <div class="skeleton" style="height: 660px; width: 100%;"></div>
+      </ng-template>
     </div>
     <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="800">
-      <h4>{{ articleFirst?.subtitle }}</h4>
-      <h1>{{ articleFirst?.title }}</h1>
+      <h4 *ngIf="!isLoading; else subtitleSkeleton">{{ articleFirst?.subtitle }}</h4>
+      <ng-template #subtitleSkeleton>
+        <div class="skeleton" style="height: 1.5em; width: 50%;"></div>
+      </ng-template>
 
-      <p class="colums">
+      <h1 *ngIf="!isLoading; else titleSkeleton">{{ articleFirst?.title }}</h1>
+      <ng-template #titleSkeleton>
+        <div class="skeleton" style="height: 2em; width: 80%;"></div>
+      </ng-template>
+
+      <p class="colums" *ngIf="!isLoading; else descriptionSkeleton">
         {{ articleFirst?.description }}
       </p>
+      <ng-template #descriptionSkeleton>
+        <div class="skeleton" style="height: 1em; width: 100%;"></div>
+        <div class="skeleton" style="height: 1em; width: 100%;"></div>
+        <div class="skeleton" style="height: 1em; width: 100%;"></div>
+      </ng-template>
     </div>
   </div>
 
   <div *ngFor="let article of articles">
     <div class="row" data-aos="fade-up" data-aos-duration="800">
-      <h4>{{ article?.subtitle }}</h4>
-      <h1>{{ article?.title }}</h1>
-  
-      <p>
+      <h4 *ngIf="!isLoading; else subtitleSkeleton">{{ article?.subtitle }}</h4>
+      <ng-template #subtitleSkeleton>
+        <div class="skeleton" style="height: 1.5em; width: 50%;"></div>
+      </ng-template>
+
+      <h1 *ngIf="!isLoading; else titleSkeleton">{{ article?.title }}</h1>
+      <ng-template #titleSkeleton>
+        <div class="skeleton" style="height: 2em; width: 80%;"></div>
+      </ng-template>
+
+      <p *ngIf="!isLoading; else descriptionSkeleton">
         {{ article?.description }}
       </p>
+      <ng-template #descriptionSkeleton>
+        <div class="skeleton" style="height: 1em; width: 100%;"></div>
+        <div class="skeleton" style="height: 1em; width: 100%;"></div>
+        <div class="skeleton" style="height: 1em; width: 100%;"></div>
+      </ng-template>
     </div>
   </div>
 </section>

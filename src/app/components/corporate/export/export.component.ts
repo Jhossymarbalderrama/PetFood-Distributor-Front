@@ -9,16 +9,18 @@ import { ArticleService } from 'src/app/services/article.service';
 })
 export class ExportComponent implements OnInit {
 
-  imgCat:string = '../../../../assets/img/corporate/export/cat.webp';
+  imgCat: string = '../../../../assets/img/corporate/export/cat.webp';
   public articleFirst?: Article;
-  public articles?: Article | any;
+  public articles?: Article[];
+  public isLoading: boolean = true;
 
-  constructor(
-    private ArticleService: ArticleService
-  ) {
+  constructor(private ArticleService: ArticleService) {}
+
+  ngOnInit(): void {
     if (this.ArticleService.exportArticles && this.ArticleService.exportFirstElement) {
       this.articleFirst = this.ArticleService.exportFirstElement;
       this.articles = this.ArticleService.exportArticles;
+      this.isLoading = false;
     } else {
       let id_section_About: number = 5;
       this.ArticleService.getContactArticleXSection(id_section_About).subscribe((articleData: any) => {
@@ -26,11 +28,8 @@ export class ExportComponent implements OnInit {
         this.articles = articleData;
         this.ArticleService.exportFirstElement = this.articleFirst;
         this.ArticleService.exportArticles = this.articles;
+        this.isLoading = false; 
       });
     }
-  }
-
-  ngOnInit(): void {
-
   }
 }

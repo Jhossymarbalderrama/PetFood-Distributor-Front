@@ -36,3 +36,22 @@ img:not(:hover){
     font-weight: bold;
     text-transform: capitalize;
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    section{
+        text-align: center;
+        margin: 0rem 3rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section{        
+        margin: 0rem 1rem;
+        padding: 0rem 0rem;
+    }
+
+    .col-md-4{
+        padding: 1rem 0rem;
+    }
+}

@@ -84,3 +84,37 @@
 html {
     scroll-behavior: smooth;    
 }
+
+::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-txt-hover);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-txt-dark);
+}
+
+
+
+.skeleton {
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite linear;
+  }
+  
+  @keyframes skeleton-loading {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  

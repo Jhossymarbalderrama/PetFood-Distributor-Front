@@ -1,104 +1,110 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;    
-    font-family: Poppins, sans-serif; 
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
 }
 
-section{   
+section {
     height: 360px;
     overflow: hidden;
-    padding: 1rem 8rem;    
+    padding: 1rem 8rem;
     display: flex;
     justify-content: center;
 }
 
-.banner{
+.banner {
     background: linear-gradient(#000000ad, #0000007c),
-     var(--img-dog-banner) center/cover no-repeat;
+        var(--img-dog-banner) center/cover no-repeat;
 }
 
-h4 > span{
+h4>span {
     color: var(--color-txt-light);
     font-size: 2rem;
 }
 
-span > p{
-    font-size: 16px;   
-    font-weight: normal;  
+span>p {
+    font-size: 16px;
+    font-weight: normal;
     text-shadow: 2px 2px 2px #272727;
 }
 
 
-.box-content{
+.box-content {
     height: 400px;
     width: 72%;
     display: flex;
     justify-content: left;
     align-items: center;
-    color: var(--color-txt-light);    
-}
-
-span > p{
-    font-size: 16px;    
-    font-weight: normal;
-    text-shadow: 2px 2px 2px #272727; 
-}
-
-span > h4{
-    color: var(--color-txt-default);    
-    font-size: 56px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-    font-weight: bold;    
-}
-
-
-h4 > span{
     color: var(--color-txt-light);
 }
 
-@media screen and (min-width: 1024px) {
-    
+span>p {
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: 2px 2px 2px #272727;
 }
 
+span>h4 {
+    color: var(--color-txt-default);
+    font-size: 4rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+h4>span {
+    color: var(--color-txt-light);
+}
+
+@media screen and (min-width: 1024px) {}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    section{   
+    section {
         /* height: auto; */
         overflow: hidden;
-        padding: 1rem 2rem;    
+        padding: 0rem 0rem;
     }
 
-    span > p{
-        font-size: 1.5vh; 
+    span>p {
+        font-size: 1.5vh;
     }
 
-    h4{
-        font-size: 2.5rem; 
-    }  
+    h4 {
+        font-size: 2.5rem;
+    }
 
-    h4 span{
+    h4 span {
         font-size: 1.5rem;
+    }
+
+    span>h4 {
+        font-size: 2rem;
     }
 }
 
 @media screen and (max-width: 767px) {
-    section{   
+    section {
         /* height: auto; */
         overflow: hidden;
-        padding: 1rem 2rem;    
+        padding: 0rem 0rem;
     }
 
-    span > p{
-        font-size: 1.5vh; 
+    span>p {
+        font-size: 1.5vh;
     }
 
-    h4{
-        font-size: 2.5rem;
-    }   
-    
-    h4 span{
+    h4 {
         font-size: 2rem;
     }
-    
+
+    h4 span {
+        font-size: 1rem;
+    }
+
+
+    span>h4 {
+        font-size: 2rem;
+    }
 }

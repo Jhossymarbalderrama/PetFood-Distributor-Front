@@ -11,20 +11,19 @@ import { ArticleService } from 'src/app/services/article.service';
     './dealership.component.css']
 })
 export class DealershipComponent implements OnInit {
-
   @ViewChild("sliderRef") sliderRef: ElementRef<HTMLElement> | any;
   slider: KeenSliderInstance | any = null;
-
   public articleFirst?: Article;
-  public articles?: Article | any;
+  public articles?: Article[] | any;
+  public isLoading: boolean = true;
 
-  constructor(
-    private ArticleService: ArticleService
-  ) {
-    if (this.ArticleService.dealershipFirstElement && 
-        this.ArticleService.dealershipArticles) {
-          this.articleFirst = this.ArticleService.dealershipFirstElement;
-          this.articles = this.ArticleService.dealershipArticles;
+  constructor(private ArticleService: ArticleService) {}
+
+  ngOnInit(): void {
+    if (this.ArticleService.dealershipFirstElement && this.ArticleService.dealershipArticles) {
+      this.articleFirst = this.ArticleService.dealershipFirstElement;
+      this.articles = this.ArticleService.dealershipArticles;
+      this.isLoading = false;
     } else {
       let id_section_About: number = 7;
       this.ArticleService.getContactArticleXSection(id_section_About).subscribe((articleData: any) => {
@@ -32,12 +31,9 @@ export class DealershipComponent implements OnInit {
         this.articles = articleData;
         this.ArticleService.dealershipFirstElement = this.articleFirst;
         this.ArticleService.dealershipArticles = this.articles;
+        this.isLoading = false; // Datos cargados, ocultar skeleton
       });
     }
-  }
-
-  ngOnInit(): void {
-
   }
 
   ngAfterViewInit() {

@@ -9,26 +9,25 @@ import { ArticleService } from 'src/app/services/article.service';
 })
 export class HistoryComponent implements OnInit {
 
-  imgDogCat:string = '../../../../assets/img/corporate/history/dog-cat.webp';
-  public articles?: Article[] | undefined;
+  imgDogCat: string = '../../../../assets/img/corporate/history/dog-cat.webp';
+  public articles?: Article[];
+  public isLoading: boolean = true;
 
-  constructor(
-    private ArticleService: ArticleService
-  ) {
+  constructor(private ArticleService: ArticleService) {}
+
+  ngOnInit(): void {
     if (this.ArticleService.historyArticles) {
       this.articles = this.ArticleService.historyArticles;
+      this.isLoading = false;
     } else {
       let id_section_About: number = 3;
       this.ArticleService.getContactArticleXSection(id_section_About).subscribe((articleData: any) => {
         this.articles = articleData;
-        this.ArticleService.historyArticles = this.articles;          
-        this.sortArticlesByYearDesc();    
+        this.ArticleService.historyArticles = this.articles;
+        this.sortArticlesByYearDesc();
+        this.isLoading = false; 
       });
     }
-  }
-
-  ngOnInit(): void {
-
   }
 
   sortArticlesByYearDesc() {

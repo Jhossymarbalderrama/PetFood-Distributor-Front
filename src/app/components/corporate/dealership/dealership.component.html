@@ -4,13 +4,27 @@
 
   <div class="row">
     <div style="margin: 25px 0px;">
-      <h4>{{articleFirst?.subtitle}}</h4>
-      <h1>{{articleFirst?.title}}</h1>
-      <p data-aos="fade-up" data-aos-duration="800">
-        {{articleFirst?.description}}
+      <h4 *ngIf="!isLoading; else subtitleSkeleton">{{ articleFirst?.subtitle }}</h4>
+      <ng-template #subtitleSkeleton>
+        <div class="skeleton" style="height: 1.5em; width: 50%;"></div>
+      </ng-template>
+  
+      <h1 *ngIf="!isLoading; else titleSkeleton">{{ articleFirst?.title }}</h1>
+      <ng-template #titleSkeleton>
+        <div class="skeleton" style="height: 2em; width: 80%;"></div>
+      </ng-template>
+  
+      <p *ngIf="!isLoading; else descriptionSkeleton" data-aos="fade-up" data-aos-duration="800">
+        {{ articleFirst?.description }}
       </p>
+      <ng-template #descriptionSkeleton>
+        <div class="skeleton" style="height: 1em; width: 100%;"></div>
+        <div class="skeleton" style="height: 1em; width: 100%;"></div>
+        <div class="skeleton" style="height: 1em; width: 100%;"></div>
+      </ng-template>
     </div>
   </div>
+  
 
   <div class="row">
     <div class="col-md-7">      
